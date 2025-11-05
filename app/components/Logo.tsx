@@ -1,0 +1,65 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+
+interface LogoProps {
+  marginTop?: number;
+  size?: "default" | "small";
+}
+
+const Logo = ({ marginTop = 0, size = "default" }: LogoProps) => {
+  const [msgIndex, setMsgIndex] = useState(0);
+  const messages = [
+    "Test Your Connection Together",
+    "Get to Know the Real You Two",
+    "Answer, Laugh, and Connect",
+  ];
+
+  const isSmall = size === "small";
+  const logoSize = isSmall
+    ? { width: 50, height: 50 }
+    : { width: 80, height: 70 };
+  const titleSize = isSmall ? "text-3xl" : "text-4xl lg:text-5xl";
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setMsgIndex((prev) => (prev + 1) % messages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [messages.length]);
+
+  return (
+    <div className="flex flex-col items-center " style={{ marginTop }}>
+      <Image
+        src="/images/logo.png"
+        alt="KnowUsBetter Logo"
+        width={logoSize.width}
+        height={logoSize.height}
+      />
+      <h1 className={`${titleSize} text-red-950 -mt-2`}>KnowUsBetter</h1>
+      {!isSmall && (
+        <div className="relative h-6 mt-1">
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={msgIndex}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{
+                duration: 0.4,
+                ease: "easeOut",
+              }}
+              className=" inset-0 text-center text-red-900"
+            >
+              {messages[msgIndex]}
+            </motion.p>
+          </AnimatePresence>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Logo;
