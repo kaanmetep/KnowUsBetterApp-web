@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "579efe72-2530-4865-84fd-f6a9e6ea7c9a.com.knowusbetter.app",
+        "paths": [
+          "/join/*"
+        ]
+      }
+    ]
+  }
+}
