@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 dark:bg-black">
+    <div className="flex flex-col min-h-screen items-center lg:justify-center pt-10 lg:pt-0 bg-zinc-50 dark:bg-black">
       <Logo />
       <Image
         src="/images/girl-and-boy-web-landing.png"
