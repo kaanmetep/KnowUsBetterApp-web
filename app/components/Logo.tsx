@@ -3,6 +3,12 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { Libre_Baskerville } from "next/font/google";
+
+const libreBaskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 interface LogoProps {
   marginTop?: number;
@@ -31,7 +37,10 @@ const Logo = ({ marginTop = 0, size = "default" }: LogoProps) => {
   }, [messages.length]);
 
   return (
-    <div className="flex flex-col items-center " style={{ marginTop }}>
+    <div
+      className={`flex flex-col items-center ${libreBaskerville.className}`}
+      style={{ marginTop }}
+    >
       <Image
         src="/images/logo.png"
         alt="KnowUsBetter Logo"
