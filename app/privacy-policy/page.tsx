@@ -36,8 +36,10 @@ export default function PrivacyPolicyPage() {
               emails, addresses, contacts, or any other personal identifiers. We
               also do not collect location data, photos, microphone access, or
               any sensitive information. The only data tied to a user are a
-              unique anonymous device identifier and in-app purchase records
-              (handled through RevenueCat).
+              unique anonymous device identifier, in-app purchase records
+              (handled through RevenueCat), and anonymous analytics data
+              collected through Firebase Analytics and Sentry for app
+              improvement and crash reporting.
             </p>
 
             {/* Information We Collect */}
@@ -90,15 +92,17 @@ export default function PrivacyPolicyPage() {
 
               <div>
                 <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
-                  Nothing Else
+                  Analytics and Crash Data
                 </h3>
                 <p>
-                  We do not collect any analytics or advertising data. We have
-                  no ads or third-party trackers. In fact, we do not integrate
-                  any analytics or ad networks at all – only the minimum data
-                  needed for core functionality. In summary, the only data
-                  collected are an anonymous user ID and any in-app purchase
-                  records.
+                  We use Firebase Analytics and Sentry to collect anonymous
+                  usage data and crash reports. This includes app usage
+                  statistics (screen views, session duration), device
+                  information (OS version, device model), and error logs when
+                  the app crashes. This data is collected anonymously and helps
+                  us improve app performance and fix bugs. We do not collect any
+                  personally identifiable information through these services,
+                  and we do not use this data for advertising purposes.
                 </p>
               </div>
             </div>
@@ -195,12 +199,60 @@ export default function PrivacyPolicyPage() {
 
               <div>
                 <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
-                  No Ads/Analytics
+                  Firebase Analytics
                 </h3>
                 <p>
-                  We do not integrate any advertising networks, analytics SDKs,
-                  or other third-party tracking services. The app collects no
-                  data beyond what's listed above.
+                  We use Firebase Analytics (provided by Google) to collect
+                  anonymous usage statistics. Firebase Analytics tracks app
+                  events, screen views, session duration, and basic device
+                  information (OS version, device model, country). This data is
+                  anonymized and aggregated, helping us understand how users
+                  interact with the app and improve the user experience.
+                  Firebase does not collect personal information. You can learn
+                  more at{" "}
+                  <a
+                    href="https://firebase.google.com/support/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-red-950 dark:hover:text-red-100"
+                  >
+                    Firebase Privacy Policy
+                  </a>
+                  .
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  Sentry (Error Tracking)
+                </h3>
+                <p>
+                  We use Sentry to monitor app crashes and errors. When the app
+                  encounters an error or crashes, Sentry collects technical
+                  information such as error messages, stack traces, device type,
+                  OS version, and app version. This data helps us identify and
+                  fix bugs quickly. Sentry does not collect any personal user
+                  information. You can learn more at{" "}
+                  <a
+                    href="https://sentry.io/privacy/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-red-950 dark:hover:text-red-100"
+                  >
+                    Sentry Privacy Policy
+                  </a>
+                  .
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  No Advertising
+                </h3>
+                <p>
+                  We do not integrate any advertising networks or use any data
+                  for advertising purposes. We do not sell or share your
+                  information with advertisers.
                 </p>
               </div>
             </div>
