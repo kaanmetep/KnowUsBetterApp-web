@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function TermsOfServicePage() {
   return (
-    <div className="min-h-screen bg-zinc-50 px-4 py-8 font-sans dark:bg-black">
+    <div className="flex-1 bg-zinc-50 px-4 py-8 font-sans dark:bg-black">
       <div className="mx-auto max-w-4xl">
         {/* Header */}
         <div className="mb-8 text-center">
@@ -284,7 +284,7 @@ export default function TermsOfServicePage() {
               If you have any questions or concerns about these Terms, please
               contact us at{" "}
               <a
-                href="mailto:support@knowusbetter.app"
+                href="mailto:help@knowusbetter.app"
                 className="font-semibold underline hover:text-red-950 dark:hover:text-red-100"
               >
                 help@knowusbetter.app

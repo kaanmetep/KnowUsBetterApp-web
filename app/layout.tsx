@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Libre_Baskerville } from "next/font/google";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 const libreBaskerville = Libre_Baskerville({
@@ -19,8 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${libreBaskerville.className} antialiased`}>
+      <body
+        className={`${libreBaskerville.className} flex min-h-screen flex-col antialiased`}
+      >
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -11,7 +11,7 @@ export default async function JoinPage({ params }: PageProps) {
   const { id } = await params;
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 px-4 dark:bg-black">
+    <div className="flex flex-1 flex-col items-center justify-center bg-zinc-50 px-4 py-12 dark:bg-black">
       <div className="w-full max-w-md text-center">
         <Logo size="small" marginTop={0} />
 
