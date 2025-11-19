@@ -9,8 +9,8 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "KnowUsBetter",
-  description: "KnowUsBetter",
+  title: "KnowUsBetter - Test Your Connection Together",
+  description: "KnowUsBetter - Test Your Connection Together",
 };
 
 export default function RootLayout({
