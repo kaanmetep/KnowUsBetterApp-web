@@ -2,8 +2,8 @@ import Logo from "@/app/components/Logo";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Terms of Service - KnowUsBetter",
-  description: "Terms of Service for KnowUsBetter app",
+  title: "Terms of Service / Terms of Use - KnowUsBetter",
+  description: "Terms of Service and Terms of Use for KnowUsBetter app",
 };
 
 export default function TermsOfServicePage() {
@@ -20,7 +20,7 @@ export default function TermsOfServicePage() {
         {/* Content */}
         <div className="rounded-2xl bg-white p-8 shadow-sm dark:bg-zinc-900 md:p-12">
           <h1 className="mb-2 text-4xl font-bold text-red-950 dark:text-red-200">
-            Terms of Service
+            Terms of Service / Terms of Use
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
             Last updated: November 16, 2025
@@ -125,12 +125,59 @@ export default function TermsOfServicePage() {
               access.
             </p>
 
-            {/* 6. Acceptable Use */}
+            {/* 6. Acceptable Use and No Objectionable Content */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              6. Acceptable Use
+              6. Acceptable Use and No Objectionable Content
             </h2>
+
             <p className="mb-4 text-red-900 dark:text-red-300">
-              You agree not to misuse the App. In particular, you must not:
+              By using the KnowUsBetter application, you agree to comply with
+              all rules and guidelines. KnowUsBetter does not tolerate any form
+              of objectionable content or abusive behavior.
+            </p>
+
+            <div className="mb-6 rounded-lg bg-red-50 p-4 dark:bg-red-950/20">
+              <h3 className="mb-3 text-lg font-semibold text-red-950 dark:text-red-200">
+                No Objectionable Content
+              </h3>
+              <p className="mb-3 text-sm text-red-900 dark:text-red-300">
+                This includes, but is not limited to:
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-red-900 dark:text-red-300">
+                <li>Harassment, bullying, or abusive behavior</li>
+                <li>Hate speech or discrimination</li>
+                <li>Sexually explicit or pornographic content</li>
+                <li>Threatening or violent messages</li>
+                <li>Any illegal or inappropriate behavior</li>
+              </ul>
+            </div>
+
+            <div className="mb-6 space-y-4 text-red-900 dark:text-red-300">
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  User-Generated Content
+                </h3>
+                <p>
+                  You are responsible for all content you send or share within
+                  the app. KnowUsBetter reserves the right to remove users who
+                  violate these rules.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  Account Removal
+                </h3>
+                <p>
+                  Any user who engages in abusive behavior or sends
+                  objectionable content may be banned or removed without notice.
+                </p>
+              </div>
+            </div>
+
+            <p className="mb-4 text-red-900 dark:text-red-300">
+              Additionally, you agree not to misuse the App. In particular, you
+              must not:
             </p>
             <ul className="mb-6 list-disc space-y-2 pl-6 text-red-900 dark:text-red-300">
               <li>
@@ -168,7 +215,8 @@ export default function TermsOfServicePage() {
             </ul>
             <p className="mb-6 text-red-900 dark:text-red-300">
               We reserve the right to suspend or terminate anyone's access for
-              any violation.
+              any violation. By using KnowUsBetter, you confirm that you
+              understand and accept these Terms.
             </p>
 
             {/* 7. Intellectual Property */}
