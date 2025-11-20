@@ -51,11 +51,9 @@ export default function TermsOfServicePage() {
               features four categories of yes/no trivia questions, with two
               players competing against each other in each match. Players can
               purchase virtual coins to create private game rooms in their
-              chosen category. The App also provides an in-game chat so the two
-              players in a room can communicate during the game. The App is
-              intended for entertainment purposes only. All gameplay and
-              questions are offered "as is" without warranty of accuracy or
-              completeness.
+              chosen category. The App is intended for entertainment purposes
+              only. All gameplay and questions are offered "as is" without
+              warranty of accuracy or completeness.
             </p>
 
             {/* 3. Eligibility and User Identification */}
@@ -63,7 +61,7 @@ export default function TermsOfServicePage() {
               3. Eligibility and User Identification
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
-              You must be at least 13 years old to use the App. If you are under
+              You must be at least 15 years old to use the App. If you are under
               18, you must have permission from a parent or legal guardian. By
               using the App, you represent that you meet these age requirements.
               No user account or registration is required; instead, each device
@@ -108,26 +106,9 @@ export default function TermsOfServicePage() {
               </p>
             </div>
 
-            {/* 5. Messaging and Communication */}
+            {/* 5. Acceptable Use and No Objectionable Content */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              5. Messaging and Communication
-            </h2>
-            <p className="mb-6 text-red-900 dark:text-red-300">
-              The App allows in-game chat between the two players in a match.
-              Chat is only available during the game and only between those two
-              players; there is no way to send messages outside of a game room
-              or to other users. You may not use the chat feature to share
-              personal information (yours or others') or to perform any
-              prohibited activity. All normal content rules apply to chat: for
-              example, you may not use offensive, threatening, harassing, or
-              hateful language, and you must not disclose others' personal data.
-              Violating these rules may result in immediate termination of your
-              access.
-            </p>
-
-            {/* 6. Acceptable Use and No Objectionable Content */}
-            <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              6. Acceptable Use and No Objectionable Content
+              5. Acceptable Use and No Objectionable Content
             </h2>
 
             <p className="mb-4 text-red-900 dark:text-red-300">
@@ -135,6 +116,36 @@ export default function TermsOfServicePage() {
               all rules and guidelines. KnowUsBetter does not tolerate any form
               of objectionable content or abusive behavior.
             </p>
+
+            <div className="mb-6 space-y-4 text-red-900 dark:text-red-300">
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  Username Requirements
+                </h3>
+                <p>
+                  When creating a username in the App, you must ensure it is
+                  appropriate and respectful. Usernames must not contain or
+                  reference:
+                </p>
+                <ul className="mt-2 list-disc space-y-1 pl-6 text-sm">
+                  <li>Profanity, vulgar language, or offensive terms</li>
+                  <li>Hate speech, slurs, or discriminatory language</li>
+                  <li>Sexually explicit or suggestive content</li>
+                  <li>
+                    Impersonation of other users, celebrities, or public figures
+                  </li>
+                  <li>Harassment, threats, or bullying language</li>
+                  <li>Promotion of illegal activities or violence</li>
+                  <li>Any other inappropriate or objectionable content</li>
+                </ul>
+                <p className="mt-2">
+                  KnowUsBetter reserves the right to reject or change any
+                  username that violates these guidelines. Users with
+                  inappropriate usernames may be removed from the App without
+                  notice.
+                </p>
+              </div>
+            </div>
 
             <div className="mb-6 rounded-lg bg-red-50 p-4 dark:bg-red-950/20">
               <h3 className="mb-3 text-lg font-semibold text-red-950 dark:text-red-200">
@@ -152,27 +163,14 @@ export default function TermsOfServicePage() {
               </ul>
             </div>
 
-            <div className="mb-6 space-y-4 text-red-900 dark:text-red-300">
-              <div>
-                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
-                  User-Generated Content
-                </h3>
-                <p>
-                  You are responsible for all content you send or share within
-                  the app. KnowUsBetter reserves the right to remove users who
-                  violate these rules.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
-                  Account Removal
-                </h3>
-                <p>
-                  Any user who engages in abusive behavior or sends
-                  objectionable content may be banned or removed without notice.
-                </p>
-              </div>
+            <div className="mb-6 text-red-900 dark:text-red-300">
+              <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                Account Removal
+              </h3>
+              <p>
+                Any user who engages in abusive behavior or sends objectionable
+                content may be banned or removed without notice.
+              </p>
             </div>
 
             <p className="mb-4 text-red-900 dark:text-red-300">
@@ -219,9 +217,9 @@ export default function TermsOfServicePage() {
               understand and accept these Terms.
             </p>
 
-            {/* 7. Intellectual Property */}
+            {/* 6. Intellectual Property */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              7. Intellectual Property
+              6. Intellectual Property
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               All content in the App – including quiz questions, text, images,
@@ -235,9 +233,9 @@ export default function TermsOfServicePage() {
               content is a violation of these Terms and applicable law.
             </p>
 
-            {/* 8. Privacy and Data Collection */}
+            {/* 7. Privacy and Data Collection */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              8. Privacy and Data Collection
+              7. Privacy and Data Collection
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               Your use of the App is also governed by our{" "}
@@ -258,9 +256,9 @@ export default function TermsOfServicePage() {
               concerns or wish to learn more, please consult our Privacy Policy.
             </p>
 
-            {/* 9. Disclaimers */}
+            {/* 8. Disclaimers */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              9. Disclaimers
+              8. Disclaimers
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               The App is provided on an "as is" and "as available" basis. We
@@ -274,9 +272,9 @@ export default function TermsOfServicePage() {
               from your use of the App or reliance on its content.
             </p>
 
-            {/* 10. Limitation of Liability */}
+            {/* 9. Limitation of Liability */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              10. Limitation of Liability
+              9. Limitation of Liability
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               To the maximum extent allowed by law, KnowUsBetter (and its
@@ -288,9 +286,9 @@ export default function TermsOfServicePage() {
               of such damages, our liability is strictly limited as above.
             </p>
 
-            {/* 11. Termination */}
+            {/* 10. Termination */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              11. Termination
+              10. Termination
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               We reserve the right to suspend or terminate your access to the
@@ -301,9 +299,9 @@ export default function TermsOfServicePage() {
               forfeited.
             </p>
 
-            {/* 12. Changes to Terms */}
+            {/* 11. Changes to Terms */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              12. Changes to Terms
+              11. Changes to Terms
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               KnowUsBetter may update these Terms of Service at any time. If we
@@ -313,9 +311,9 @@ export default function TermsOfServicePage() {
               effect means you agree to be bound by the new Terms.
             </p>
 
-            {/* 13. Governing Law */}
+            {/* 12. Governing Law */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              13. Governing Law
+              12. Governing Law
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               These Terms are governed by and construed in accordance with the
@@ -324,9 +322,9 @@ export default function TermsOfServicePage() {
               the courts of Turkey.
             </p>
 
-            {/* 14. Contact Information */}
+            {/* 13. Contact Information */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              14. Contact Information
+              13. Contact Information
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               If you have any questions or concerns about these Terms, please

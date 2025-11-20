@@ -77,21 +77,6 @@ export default function PrivacyPolicyPage() {
 
               <div>
                 <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
-                  User Content
-                </h3>
-                <p>
-                  The app lets players send messages to each other during the
-                  game. These chat messages are temporarily stored on our server
-                  only to deliver them to other players. We do not link message
-                  content to any personal data beyond the anonymous ID used in
-                  the game. We do not read or use these messages for anything
-                  other than gameplay. We do not store or use these messages for
-                  any other purpose.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
                   Analytics and Crash Data
                 </h3>
                 <p>
@@ -119,8 +104,7 @@ export default function PrivacyPolicyPage() {
                 </h3>
                 <p>
                   We use the device ID to manage game sessions (matchmaking,
-                  scores, etc.) and to route messages between players. Your
-                  messages are delivered based on this anonymous ID.
+                  scores, etc.).
                 </p>
               </div>
 
@@ -191,9 +175,8 @@ export default function PrivacyPolicyPage() {
                 </h3>
                 <p>
                   We use a server (Supabase) to store minimal game data. The
-                  only user-related data stored is the anonymous device ID (and
-                  chat messages in transit). No other personal data is stored on
-                  our servers.
+                  only user-related data stored is the anonymous device ID. No
+                  other personal data is stored on our servers.
                 </p>
               </div>
 
@@ -271,9 +254,8 @@ export default function PrivacyPolicyPage() {
               guidelines state, even "guest" or automatically-generated accounts
               must be deletable. Therefore, you may request deletion of your
               data at any time. If you want us to erase your information (device
-              ID, messages, and purchase records), please contact our support
-              (see below). We will promptly delete your data from our systems
-              upon request.
+              ID and purchase records), please contact our support (see below).
+              We will promptly delete your data from our systems upon request.
             </p>
 
             {/* Children's Privacy */}
