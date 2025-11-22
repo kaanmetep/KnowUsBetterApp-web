@@ -18,15 +18,15 @@ export default function AppStoreButton({
   className = "",
 }: AppStoreButtonProps) {
   const sizeClasses = {
-    small: "px-5 py-2.5 text-sm gap-2",
-    medium: "px-8 py-4 text-lg gap-3",
-    large: "px-8 py-4 text-lg gap-3",
+    small: "px-4 py-2 text-xs md:px-5 md:py-2.5 md:text-sm gap-2",
+    medium: "px-6 py-3 text-base md:px-8 md:py-4 md:text-lg gap-2 md:gap-3",
+    large: "px-6 py-3 text-base md:px-8 md:py-4 md:text-lg gap-2 md:gap-3",
   };
 
   const iconSizes = {
-    small: "h-5 w-5",
-    medium: "h-7 w-7",
-    large: "h-7 w-7",
+    small: "h-4 w-4 md:h-5 md:w-5",
+    medium: "h-5 w-5 md:h-7 md:w-7",
+    large: "h-5 w-5 md:h-7 md:w-7",
   };
 
   const defaultTexts = {
