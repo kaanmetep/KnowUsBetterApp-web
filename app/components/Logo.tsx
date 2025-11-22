@@ -27,7 +27,7 @@ const Logo = ({ marginTop = 0, size = "default" }: LogoProps) => {
   const logoSize = isSmall
     ? { width: 50, height: 50 }
     : { width: 80, height: 70 };
-  const titleSize = isSmall ? "text-3xl" : "text-4xl lg:text-5xl";
+  const titleSize = isSmall ? "text-xl md:text-3xl" : "text-4xl lg:text-5xl";
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -38,7 +38,7 @@ const Logo = ({ marginTop = 0, size = "default" }: LogoProps) => {
 
   return (
     <div
-      className={`flex flex-col items-center ${libreBaskerville.className}`}
+      className={`flex justify-center items-center  ${libreBaskerville.className}`}
       style={{ marginTop }}
     >
       <Image
@@ -46,10 +46,11 @@ const Logo = ({ marginTop = 0, size = "default" }: LogoProps) => {
         alt="KnowUsBetter Logo"
         width={logoSize.width}
         height={logoSize.height}
+        className={isSmall ? "w-8 h-8 md:w-[50px] md:h-[50px]" : ""}
       />
-      <h1 className={`${titleSize} text-red-950 -mt-2`}>KnowUsBetter</h1>
+      <h1 className={`${titleSize} text-red-950 `}>KnowUsBetter</h1>
       {!isSmall && (
-        <div className="relative h-6 mt-1">
+        <div className="relative h-6 ">
           <AnimatePresence mode="wait">
             <motion.p
               key={msgIndex}
