@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import AppStoreButton from "./AppStoreButton";
 
 export default function Onboarding() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -67,14 +66,12 @@ export default function Onboarding() {
 
       {/* --- HERO SECTION --- */}
       <main className="flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl mx-auto px-6 py-10 lg:py-20 gap-12 lg:gap-24">
-        {/* SOL TAFAR: Text Content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left z-10"
         >
-          {/* App Icon (Minitature) */}
           <div className="relative w-24 h-24 -ml-4">
             <Image
               src="/images/logo.png"
@@ -118,14 +115,12 @@ export default function Onboarding() {
           </div>
         </motion.div>
 
-        {/* SAĞ TARAF: Phone Slider */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex-1 relative flex items-center justify-center w-full max-w-[400px] lg:max-w-none"
         >
-          {/* Slider Container */}
           <div className="relative w-full flex items-center justify-center">
             {/* Left Arrow */}
             <button
@@ -148,14 +143,10 @@ export default function Onboarding() {
               </svg>
             </button>
 
-            {/* THE PHONE FRAME - SABİTLENDİ (rotate/hover silindi) */}
             <div className="relative z-10 bg-[#4A342E] p-3 md:p-4 rounded-[3rem] md:rounded-[3.5rem] shadow-2xl shadow-black/20">
-              {/* İç Çerçeve (Ekranın kendisi) */}
               <div className="relative w-[260px] h-[540px] md:w-[280px] md:h-[580px] bg-black rounded-[2.5rem] overflow-hidden border-[4px] border-[#2a1d1a]">
-                {/* Dynamic Notch */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 h-7 w-28 bg-black rounded-b-2xl z-30"></div>
 
-                {/* Status Bar Fake Items */}
                 <div className="absolute top-2 left-6 z-30 text-[10px] text-white font-bold">
                   9:41
                 </div>
@@ -163,7 +154,6 @@ export default function Onboarding() {
                   <div className="w-4 h-3 bg-white rounded-sm"></div>
                 </div>
 
-                {/* SLIDER IMAGES */}
                 <AnimatePresence mode="popLayout" initial={false}>
                   <motion.div
                     key={currentSlide}
