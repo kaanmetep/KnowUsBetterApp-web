@@ -1,17 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+
+const TOTAL_IMAGES = 6;
+const IMAGE_SOURCES = Array.from(
+  { length: TOTAL_IMAGES },
+  (_, i) => `/images/apple-photo-${i + 1}.jpeg`
+);
 
 export default function Onboarding() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const totalImages = 6;
-  const images = Array.from(
-    { length: totalImages },
-    (_, i) => `/images/apple-photo-${i + 1}.jpeg`
-  );
+  const images = IMAGE_SOURCES;
+
+  useEffect(() => {
+    IMAGE_SOURCES.forEach((src) => {
+      const img = new window.Image();
+      img.src = src;
+    });
+  }, []);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % images.length);
@@ -137,7 +146,7 @@ export default function Onboarding() {
             {/* Left Arrow */}
             <button
               onClick={prevSlide}
-              className="flex absolute left-2 lg:left-4 z-20 w-10 h-10 items-center justify-center rounded-full text-[#2D1810] hover:bg-black/5 transition-colors cursor-pointer"
+              className="flex absolute -left-4 lg:-left-6 z-20 w-10 h-10 items-center justify-center rounded-full text-[#2D1810] hover:bg-black/5 transition-colors cursor-pointer"
             >
               <svg
                 width="24"
@@ -190,7 +199,7 @@ export default function Onboarding() {
             {/* Right Arrow */}
             <button
               onClick={nextSlide}
-              className="flex absolute right-2 lg:right-4 z-20 w-10 h-10 items-center justify-center rounded-full text-[#2D1810] hover:bg-black/5 transition-colors cursor-pointer"
+              className="flex absolute -right-4 lg:-right-6 z-20 w-10 h-10 items-center justify-center rounded-full text-[#2D1810] hover:bg-black/5 transition-colors cursor-pointer"
             >
               <svg
                 width="24"
