@@ -20,11 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${libreBaskerville.className} flex min-h-screen flex-col antialiased`}
-      >
-        {children}
-        <Footer />
+      <body className={`${libreBaskerville.className} antialiased`}>
+        <div className="flex min-h-screen flex-col">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
