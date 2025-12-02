@@ -22,7 +22,7 @@ export default function Onboarding() {
   };
 
   return (
-    <div className="w-full bg-[#FFF0E5] text-[#2D1810] overflow-x-hidden font-sans lg:min-h-screen">
+    <div className="w-full bg-[#FFF0E5] text-[#2D1810] pb-10 font-sans lg:min-h-screen">
       {/* --- HEADER --- */}
       <header className="w-full px-4 pt-4 pb-2 md:px-12 md:py-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -35,7 +35,37 @@ export default function Onboarding() {
           />
         </div>
 
+        {/* Desktop nav: all links visible */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-[#5D4037]">
+          <a
+            href="https://apps.apple.com/tr/app/knowusbetter/id6754946265?l=tr"
+            target="_blank"
+            className="hover:text-black transition-colors"
+          >
+            Download
+          </a>
+          <a
+            href="mailto:help@knowusbetter.app"
+            className="hover:text-black transition-colors"
+          >
+            Support
+          </a>
+          <a
+            href="/privacy-policy"
+            className="hover:text-black transition-colors"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="/terms-of-service"
+            className="hover:text-black transition-colors"
+          >
+            Terms of Service
+          </a>
+        </nav>
+
+        {/* Mobile nav: only Download visible */}
+        <nav className="flex items-center gap-4 text-sm font-semibold text-[#5D4037] md:hidden">
           <a
             href="https://apps.apple.com/tr/app/knowusbetter/id6754946265?l=tr"
             target="_blank"
@@ -107,7 +137,7 @@ export default function Onboarding() {
             {/* Left Arrow */}
             <button
               onClick={prevSlide}
-              className="hidden md:flex absolute left-2 lg:left-4 z-20 w-10 h-10 items-center justify-center rounded-full text-[#2D1810] hover:bg-black/5 transition-colors cursor-pointer"
+              className="flex absolute left-2 lg:left-4 z-20 w-10 h-10 items-center justify-center rounded-full text-[#2D1810] hover:bg-black/5 transition-colors cursor-pointer"
             >
               <svg
                 width="24"
@@ -160,7 +190,7 @@ export default function Onboarding() {
             {/* Right Arrow */}
             <button
               onClick={nextSlide}
-              className="hidden md:flex absolute right-2 lg:right-4 z-20 w-10 h-10 items-center justify-center rounded-full text-[#2D1810] hover:bg-black/5 transition-colors cursor-pointer"
+              className="flex absolute right-2 lg:right-4 z-20 w-10 h-10 items-center justify-center rounded-full text-[#2D1810] hover:bg-black/5 transition-colors cursor-pointer"
             >
               <svg
                 width="24"
