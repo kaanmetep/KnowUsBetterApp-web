@@ -22,9 +22,9 @@ export default function Onboarding() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-[#FFF0E5] text-[#2D1810] overflow-x-hidden font-sans">
+    <div className="w-full bg-[#FFF0E5] text-[#2D1810] overflow-x-hidden font-sans lg:min-h-screen">
       {/* --- HEADER --- */}
-      <header className="w-full px-6 py-6 md:px-12 flex items-center justify-between">
+      <header className="w-full px-4 pt-4 pb-2 md:px-12 md:py-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Image
             src="/images/logo.png"
@@ -42,24 +42,6 @@ export default function Onboarding() {
             className="hover:text-black transition-colors"
           >
             Download
-          </a>
-          <a
-            href="mailto:help@knowusbetter.app"
-            className="hover:text-black transition-colors"
-          >
-            Support
-          </a>
-          <a
-            href="/privacy-policy"
-            className="hover:text-black transition-colors"
-          >
-            Privacy Policy
-          </a>
-          <a
-            href="/terms-of-service"
-            className="hover:text-black transition-colors"
-          >
-            Terms of Service
           </a>
         </nav>
       </header>
