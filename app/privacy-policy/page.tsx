@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: November 16, 2025
+            Last updated: October 8, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -32,14 +32,14 @@ export default function PrivacyPolicyPage() {
               This quiz game app is offered on both iOS and Android. We respect
               your privacy and collect only the data needed for core
               functionality. No login or personal account is required – the game
-              identifies players only by a random ID. We do not collect names,
-              emails, addresses, contacts, or any other personal identifiers. We
-              also do not collect location data, photos, microphone access, or
-              any sensitive information. The only data tied to a user are a
-              unique anonymous device identifier, in-app purchase records
-              (handled through RevenueCat), and anonymous analytics data
-              collected through Firebase Analytics and Sentry for app
-              improvement and crash reporting.
+              identifies players only by a random ID. We do not collect emails,
+              phone numbers, addresses, contacts, location data, photos, or
+              microphone access. The data we handle is: a unique anonymous
+              device identifier, the display name and avatar you choose, your
+              answers during a game (including short typed answers), reports
+              you send about other players, in-app purchase records (handled
+              through RevenueCat), an optional push notification token, and
+              analytics and crash data used to improve the app.
             </p>
 
             {/* Information We Collect */}
@@ -57,6 +57,59 @@ export default function PrivacyPolicyPage() {
                   RevenueCat or our backend). This lets us associate game
                   progress and purchases with your device, but it is not linked
                   to your personal identity.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  Display Name and Avatar
+                </h3>
+                <p>
+                  Before playing, you choose a display name and pick one of our
+                  preset avatars (no photo uploads). Your name and avatar are
+                  saved on your device and shared only with the other player in
+                  your game room. Names are automatically filtered for
+                  profanity.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  Game Answers (Including Typed Answers)
+                </h3>
+                <p>
+                  Games are played in private rooms of at most two players.
+                  Your answers – including short typed answers (up to 30
+                  characters) for some questions – are sent to our game server
+                  so they can be shown to the other player in your room and
+                  scored. Typed answers are never shown to anyone outside your
+                  room and are never published. Before your answer is shown, it
+                  is automatically checked for harmful content (see "Safety and
+                  Moderation" below).
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  Reports
+                </h3>
+                <p>
+                  If you report another player's typed answer, we store the
+                  report for manual review: the reported answer, the question,
+                  the room code, both players' display names, and both
+                  players' anonymous IDs.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  Push Notification Token
+                </h3>
+                <p>
+                  If you allow notifications, we store your device's push token
+                  so we can send you game-related notifications (for example,
+                  daily reward reminders). You can turn notifications off at
+                  any time in your device settings.
                 </p>
               </div>
 
@@ -80,14 +133,13 @@ export default function PrivacyPolicyPage() {
                   Analytics and Crash Data
                 </h3>
                 <p>
-                  We use Firebase Analytics and Sentry to collect anonymous
-                  usage data and crash reports. This includes app usage
-                  statistics (screen views, session duration), device
-                  information (OS version, device model), and error logs when
-                  the app crashes. This data is collected anonymously and helps
-                  us improve app performance and fix bugs. We do not collect any
-                  personally identifiable information through these services,
-                  and we do not use this data for advertising purposes.
+                  We use Firebase Analytics and Sentry to collect usage data and
+                  crash reports. This includes app usage statistics (screen
+                  views, session duration), device information (OS version,
+                  device model), technical data such as IP address, and error
+                  logs when the app crashes. This data helps us improve app
+                  performance and fix bugs, and we do not use it for
+                  advertising purposes.
                 </p>
               </div>
             </div>
@@ -103,8 +155,39 @@ export default function PrivacyPolicyPage() {
                   Game Functionality
                 </h3>
                 <p>
-                  We use the device ID to manage game sessions (matchmaking,
-                  scores, etc.).
+                  We use the device ID, display name, avatar, and answers to run
+                  private game rooms: showing each player's answers to the other
+                  player in the room, calculating match scores, and checking
+                  whether two typed answers mean the same thing.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  Safety and Moderation
+                </h3>
+                <p>
+                  Every typed answer is checked on our server before the other
+                  player sees it. Offensive words are masked by a profanity
+                  filter, and the answer is analyzed by OpenAI's moderation
+                  service. Answers flagged as harmful (for example hate,
+                  threats, or sexual content) are never shown. Instead, both
+                  players see "This answer was hidden". We review reports sent
+                  by players, and we may permanently block the anonymous ID of
+                  anyone who violates our Terms of Use from creating or joining
+                  game rooms.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  AI Match Analysis (Optional)
+                </h3>
+                <p>
+                  If you choose to unlock an AI Match Analysis after a game, the
+                  display names and answers from that game (including typed
+                  answers) are sent to OpenAI to generate a personalized report.
+                  The app asks for your agreement before anything is sent.
                 </p>
               </div>
 
@@ -174,9 +257,37 @@ export default function PrivacyPolicyPage() {
                   Our Backend (Supabase)
                 </h3>
                 <p>
-                  We use a server (Supabase) to store minimal game data. The
-                  only user-related data stored is the anonymous device ID. No
-                  other personal data is stored on our servers.
+                  Our game server keeps active game rooms (display names,
+                  avatars, and answers) in temporary storage that is deleted
+                  automatically within a few hours. We use Supabase as our
+                  database for coin balances and purchase records, push tokens,
+                  player reports, and blocked IDs, all linked only to your
+                  anonymous device ID.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  OpenAI (Moderation and AI Features)
+                </h3>
+                <p>
+                  We send typed answers to OpenAI to (1) check them for harmful
+                  content, and (2) decide whether two players' typed answers
+                  match. If you unlock an AI Match Analysis, the names and
+                  answers from that game are also sent to OpenAI to write your
+                  report. OpenAI processes this data on our behalf. Under its
+                  API terms, OpenAI does not use it to train its models and may
+                  keep it for up to 30 days for abuse monitoring. You can learn
+                  more at{" "}
+                  <a
+                    href="https://openai.com/policies/privacy-policy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-red-950 dark:hover:text-red-100"
+                  >
+                    OpenAI Privacy Policy
+                  </a>
+                  .
                 </p>
               </div>
 
@@ -213,9 +324,10 @@ export default function PrivacyPolicyPage() {
                   We use Sentry to monitor app crashes and errors. When the app
                   encounters an error or crashes, Sentry collects technical
                   information such as error messages, stack traces, device type,
-                  OS version, and app version. This data helps us identify and
-                  fix bugs quickly. Sentry does not collect any personal user
-                  information. You can learn more at{" "}
+                  OS version, app version, and IP address. For a small share of
+                  sessions, Sentry may also record a replay of the app's screens
+                  with text and images masked. This data helps us identify and
+                  fix bugs quickly. You can learn more at{" "}
                   <a
                     href="https://sentry.io/privacy/"
                     target="_blank"
@@ -246,9 +358,15 @@ export default function PrivacyPolicyPage() {
             </h2>
 
             <p className="mb-6 text-red-900 dark:text-red-300">
-              We retain your device ID and purchase records only as long as
-              necessary for the app to function (e.g., to remember your coins
-              and game progress). We do not keep your data longer than needed.
+              Game rooms, including names and answers, are deleted
+              automatically from our server within a few hours after a game.
+              AI Match Analysis results are kept for up to 2 hours so you can
+              reopen them. Player reports are kept only as long as needed to
+              review them and enforce our Terms of Use. Blocked IDs are kept
+              for as long as the block applies. We retain your device ID and
+              purchase records only as long as necessary for the app to
+              function (e.g., to remember your coins). We do not keep your data
+              longer than needed.
               While the app does not include an in-app "Delete Account" button,
               we comply with privacy guidelines for data deletion. As Apple's
               guidelines state, even "guest" or automatically-generated accounts

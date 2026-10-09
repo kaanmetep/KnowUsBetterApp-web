@@ -23,7 +23,7 @@ export default function TermsOfServicePage() {
             Terms of Service / Terms of Use
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: November 16, 2025
+            Last updated: October 8, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -47,13 +47,15 @@ export default function TermsOfServicePage() {
               2. Description of Service
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
-              KnowUsBetter is a real-time multiplayer quiz game. The App
-              features four categories of yes/no trivia questions, with two
-              players competing against each other in each match. Players can
-              purchase virtual coins to create private game rooms in their
-              chosen category. The App is intended for entertainment purposes
-              only. All gameplay and questions are offered "as is" without
-              warranty of accuracy or completeness.
+              KnowUsBetter is a real-time question game for two players,
+              played in private rooms that are joined with a room code. The
+              App offers several categories and game modes. Players answer by
+              choosing an option or, for some questions, by typing a short
+              answer. Players can earn or purchase virtual coins to unlock
+              categories and optional features such as the AI Match Analysis.
+              The App is intended for entertainment purposes only. All
+              gameplay, questions, and AI-generated content are offered "as
+              is" without warranty of accuracy or completeness.
             </p>
 
             {/* 3. Eligibility and User Identification */}
@@ -165,11 +167,41 @@ export default function TermsOfServicePage() {
 
             <div className="mb-6 text-red-900 dark:text-red-300">
               <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                Typed Answers
+              </h3>
+              <p>
+                Some questions let you type a short answer. Typed answers are
+                shown only to the other player in your room. They must follow
+                the same rules as usernames and must not contain any of the
+                objectionable content listed above. You are responsible for
+                what you type.
+              </p>
+            </div>
+
+            <div className="mb-6 text-red-900 dark:text-red-300">
+              <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                Moderation and Reporting
+              </h3>
+              <p>
+                Usernames and typed answers are filtered automatically.
+                Offensive words are masked, and typed answers are checked by an
+                automated moderation service (OpenAI). Answers flagged as
+                harmful are hidden and never shown to the other player. You
+                can report another player's typed answer from the round result
+                screen. We review reports and act on violations. You can also
+                leave a game at any time, and the room host can remove the
+                other player from the room.
+              </p>
+            </div>
+
+            <div className="mb-6 text-red-900 dark:text-red-300">
+              <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
                 Account Removal
               </h3>
               <p>
                 Any user who engages in abusive behavior or sends objectionable
-                content may be banned or removed without notice.
+                content may be banned or removed without notice. A banned
+                device ID can no longer create or join game rooms.
               </p>
             </div>
 
@@ -246,14 +278,17 @@ export default function TermsOfServicePage() {
                 Privacy Policy
               </Link>
               , which explains how we collect, use, and protect data. In
-              summary, KnowUsBetter does not require you to submit personal
-              information. We only collect limited analytics and crash data
-              through third-party services (specifically, Firebase and Sentry).
-              These services gather device-usage statistics and error reports to
-              help us improve the App. We do not collect personal messages or
-              private data from users. By using the App, you consent to the data
-              practices described in our Privacy Policy. If you have privacy
-              concerns or wish to learn more, please consult our Privacy Policy.
+              summary, KnowUsBetter does not require an account or personal
+              contact details. To run a game, we process the display name you
+              choose and your answers, including short typed answers, which
+              are shown only to the other player in your room. Typed answers
+              are checked for harmful content and matched using OpenAI. If you
+              choose the AI Match Analysis, the names and answers from that
+              game are sent to OpenAI to generate your report. We also collect
+              limited analytics and crash data through Firebase and Sentry. By
+              using the App, you consent to the data practices described in our
+              Privacy Policy. If you have privacy concerns or wish to learn
+              more, please consult our Privacy Policy.
             </p>
 
             {/* 8. Disclaimers */}
@@ -267,7 +302,10 @@ export default function TermsOfServicePage() {
               guarantee that the App will always be uninterrupted, error-free,
               or secure. The quiz questions and any content are for
               entertainment and general knowledge only and may contain errors;
-              you should not rely on them for any purpose. In no case will
+              you should not rely on them for any purpose. AI Match Analysis
+              reports are generated automatically by artificial intelligence.
+              They are for entertainment only and are not relationship,
+              psychological, or professional advice. In no case will
               KnowUsBetter be responsible for any damages or losses resulting
               from your use of the App or reliance on its content.
             </p>
