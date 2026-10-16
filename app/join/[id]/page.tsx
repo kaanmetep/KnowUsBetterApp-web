@@ -40,7 +40,7 @@ export default async function JoinPage({ params }: PageProps) {
           <div className="relative w-full">
             <div className="absolute left-[3px] right-[-3px] top-[3px] bottom-[-3px] rounded-[14px] bg-gray-900" />
             <a
-              href="https://apps.apple.com/app/knowusbetter"
+              href="https://apps.apple.com/app/id6754946265"
               target="_blank"
               rel="noopener noreferrer"
               className="relative z-10 flex w-full items-center justify-center rounded-[14px] border-2 border-gray-900 bg-[#ffc9d4] px-8 py-[18px] text-xl font-bold text-gray-900 transition-all hover:translate-x-[2px] hover:translate-y-[2px] active:translate-x-[3px] active:translate-y-[3px]"
