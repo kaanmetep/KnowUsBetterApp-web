@@ -132,7 +132,7 @@ export const COPY: Record<Lang, Copy> = {
   tr: {
     navCta: "Uygulamayı indir",
     hero: {
-      eyebrow: "İki kişilik bir oyun",
+      eyebrow: "Eş zamanlı quiz",
       headline: "Partnerini <em>gerçekten</em> tanıyor musun?",
       sub: "İki telefon, tek soru, aynı anda cevap. Sonra nerede eşleştiğinizi, nerede ayrıldığınızı görürsünüz.",
       note: "iPhone'da ücretsiz · Türkçe, English, Español",
