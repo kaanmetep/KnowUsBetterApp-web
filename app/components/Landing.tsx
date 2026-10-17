@@ -22,9 +22,9 @@ export default function Landing({ lang, tonightIndex }: { lang: Lang; tonightInd
   const c = COPY[lang];
 
   return (
-    <div lang={lang} className="grain relative overflow-x-clip">
+    <div lang={lang} className="paper overflow-x-clip bg-bg">
       {/* ───────── Hero ───────── */}
-      <section className="relative bg-gradient-to-b from-sand via-[#f8f1ec] to-bg">
+      <section className="paper bg-gradient-to-b from-sand via-[#f8f1ec] to-bg">
         <div className="pointer-events-none absolute left-1/2 top-[38%] h-[900px] w-[900px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(201,75,106,0.11)_0%,rgba(201,75,106,0.04)_38%,transparent_64%)] lg:left-[72%]" />
 
         <header className="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-5 pt-5 sm:px-8 sm:pt-7">
@@ -78,7 +78,7 @@ export default function Landing({ lang, tonightIndex }: { lang: Lang; tonightInd
       </section>
 
       {/* ───────── How it plays ───────── */}
-      <section className="relative border-y border-hairline bg-gradient-to-b from-bg to-[#fbf3ee] px-5 py-20 sm:px-8 sm:py-28">
+      <section className="paper border-y border-hairline bg-gradient-to-b from-bg to-[#fbf3ee] px-5 py-20 sm:px-8 sm:py-28">
         <div className="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[1fr_1.05fr] lg:gap-20">
           <div className="text-center lg:text-left">
             <span className="eyebrow lg-left">{c.how.eyebrow}</span>

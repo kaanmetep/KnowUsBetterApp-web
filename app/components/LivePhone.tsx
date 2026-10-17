@@ -36,13 +36,16 @@ export default function LivePhone({ lang, partner }: { lang: Lang; partner: Copy
 
   return (
     <div className="relative w-[272px] [container-type:inline-size] sm:w-[310px] lg:w-[340px]">
+      {/* Box shadow rather than a drop-shadow filter: Safari re-rasterizes
+          filtered layers when the pills above them animate. */}
+      <div className="absolute inset-x-[0.8%] inset-y-[0.4%] rounded-[16.6%/7.7%] shadow-[0_50px_60px_-10px_rgba(74,24,38,0.22),0_16px_24px_-4px_rgba(74,24,38,0.12)]" />
       <Image
         src={`/screens/${lang}/game.webp`}
         alt=""
         width={720}
         height={1548}
         priority
-        className="phone-shadow relative h-auto w-full select-none"
+        className="relative h-auto w-full select-none"
         draggable={false}
       />
 
@@ -64,9 +67,7 @@ export default function LivePhone({ lang, partner }: { lang: Lang; partner: Copy
       </AnimatePresence>
 
       <div className="absolute inset-x-0 top-[83%] flex justify-center">
-        <motion.div
-          layout
-          transition={{ type: "spring", stiffness: 380, damping: 30 }}
+        <div
           className={`flex h-[11cqw] items-center gap-[2.4cqw] whitespace-nowrap rounded-full border pl-[1cqw] pr-[4cqw] shadow-[0_14px_30px_-8px_rgba(74,24,38,0.28),0_4px_10px_rgba(74,24,38,0.08)] transition-colors duration-300 ${
             answered ? "border-match-border bg-[#ecfdf3]" : "border-hairline bg-white"
           }`}
@@ -98,7 +99,7 @@ export default function LivePhone({ lang, partner }: { lang: Lang; partner: Copy
               ))}
             </span>
           )}
-        </motion.div>
+        </div>
       </div>
     </div>
   );
