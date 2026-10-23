@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: October 8, 2026
+            Last updated: October 23, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -33,8 +33,8 @@ export default function PrivacyPolicyPage() {
               your privacy and collect only the data needed for core
               functionality. No login or personal account is required – the game
               identifies players only by a random ID. We do not collect emails,
-              phone numbers, addresses, contacts, location data, photos, or
-              microphone access. The data we handle is: a unique anonymous
+              phone numbers, addresses, contacts, precise location data,
+              photos, or microphone access. The data we handle is: a unique anonymous
               device identifier, the display name and avatar you choose, your
               answers during a game (including short typed answers), reports
               you send about other players, in-app purchase records (handled
@@ -133,13 +133,22 @@ export default function PrivacyPolicyPage() {
                   Analytics and Crash Data
                 </h3>
                 <p>
-                  We use Firebase Analytics and Sentry to collect usage data and
-                  crash reports. This includes app usage statistics (screen
-                  views, session duration), device information (OS version,
-                  device model), technical data such as IP address, and error
-                  logs when the app crashes. This data helps us improve app
-                  performance and fix bugs, and we do not use it for
-                  advertising purposes.
+                  We use PostHog for product analytics and Sentry for crash
+                  reports. Product analytics records how the app is used,
+                  linked to your anonymous device ID: app opens, screens
+                  viewed, onboarding steps, creating and joining rooms, sharing
+                  an invite, starting, finishing or leaving a game, answering
+                  questions (we record that you answered, not what you
+                  answered), reactions sent and received, opening the coin
+                  store, purchase attempts and their result (product, price
+                  and currency), daily rewards, AI Match Analysis use, rating
+                  prompts and your notification permission choice. Along with
+                  these events we receive device information (device model, OS
+                  version), app version, language, IP address and the
+                  approximate location (country and city) derived from it.
+                  Crash reports include error logs when the app fails. This
+                  data helps us understand which features people use, improve
+                  the app and fix bugs. We do not use it for advertising.
                 </p>
               </div>
             </div>
@@ -196,10 +205,12 @@ export default function PrivacyPolicyPage() {
                   Purchases
                 </h3>
                 <p>
-                  We use purchase data solely to grant you coins or
-                  subscriptions. RevenueCat validates the purchase and notifies
-                  us so we can credit your account. We do not use purchase data
-                  for marketing or analytics.
+                  We use purchase data to grant you coins or subscriptions.
+                  RevenueCat validates the purchase and notifies us so we can
+                  credit your account. We also record purchase events
+                  (product, price and currency) in our product analytics to
+                  understand which packages people choose. We never use
+                  purchase data for advertising or marketing.
                 </p>
               </div>
 
@@ -293,24 +304,26 @@ export default function PrivacyPolicyPage() {
 
               <div>
                 <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
-                  Firebase Analytics
+                  PostHog (Product Analytics)
                 </h3>
                 <p>
-                  We use Firebase Analytics (provided by Google) to collect
-                  anonymous usage statistics. Firebase Analytics tracks app
-                  events, screen views, session duration, and basic device
-                  information (OS version, device model, country). This data is
-                  anonymized and aggregated, helping us understand how users
-                  interact with the app and improve the user experience.
-                  Firebase does not collect personal information. You can learn
+                  We use PostHog to understand how the app is used. PostHog
+                  receives the in-app events described under "Analytics and
+                  Crash Data" above, together with your anonymous device ID,
+                  device model, OS version, app version, language, IP address
+                  and approximate location (country and city). It never
+                  receives your display name, your answers, or any payment
+                  details. PostHog processes this data on our behalf on servers
+                  in the United States, and we do not use it for advertising or
+                  to track you across other apps or websites. You can learn
                   more at{" "}
                   <a
-                    href="https://firebase.google.com/support/privacy"
+                    href="https://posthog.com/privacy"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline hover:text-red-950 dark:hover:text-red-100"
                   >
-                    Firebase Privacy Policy
+                    PostHog Privacy Policy
                   </a>
                   .
                 </p>
@@ -365,14 +378,16 @@ export default function PrivacyPolicyPage() {
               review them and enforce our Terms of Use. Blocked IDs are kept
               for as long as the block applies. We retain your device ID and
               purchase records only as long as necessary for the app to
-              function (e.g., to remember your coins). We do not keep your data
-              longer than needed.
+              function (e.g., to remember your coins). Analytics and crash data
+              are kept only as long as they are useful for improving the app.
+              We do not keep your data longer than needed.
               While the app does not include an in-app "Delete Account" button,
               we comply with privacy guidelines for data deletion. As Apple's
               guidelines state, even "guest" or automatically-generated accounts
               must be deletable. Therefore, you may request deletion of your
               data at any time. If you want us to erase your information (device
-              ID and purchase records), please contact our support (see below).
+              ID, purchase records and the analytics data linked to your
+              device ID), please contact our support (see below).
               We will promptly delete your data from our systems upon request.
             </p>
 

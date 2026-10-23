@@ -23,7 +23,7 @@ export default function TermsOfServicePage() {
             Terms of Service / Terms of Use
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: October 8, 2026
+            Last updated: October 23, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -285,7 +285,7 @@ export default function TermsOfServicePage() {
               are checked for harmful content and matched using OpenAI. If you
               choose the AI Match Analysis, the names and answers from that
               game are sent to OpenAI to generate your report. We also collect
-              limited analytics and crash data through Firebase and Sentry. By
+              limited analytics and crash data through PostHog and Sentry. By
               using the App, you consent to the data practices described in our
               Privacy Policy. If you have privacy concerns or wish to learn
               more, please consult our Privacy Policy.
