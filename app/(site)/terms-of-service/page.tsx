@@ -2,8 +2,9 @@ import Logo from "@/app/components/Logo";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Terms of Service / Terms of Use - KnowUsBetter",
-  description: "Terms of Service and Terms of Use for KnowUsBetter app",
+  title: "Terms of Service",
+  description: "Terms of Service and Terms of Use for the KnowUsBetter couples quiz app.",
+  alternates: { canonical: "/terms-of-service" },
 };
 
 export default function TermsOfServicePage() {

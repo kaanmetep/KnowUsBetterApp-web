@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { APP_STORE_URL, type Copy, type Lang } from "../content";
+import type { Copy } from "../content";
+import { APP_STORE_URL, langPath, type Lang } from "../i18n";
 
 const ease = [0.2, 0.7, 0.2, 1] as const;
 
@@ -23,7 +24,7 @@ export default function GuessQuiz({ lang, copy }: { lang: Lang; copy: Copy["gues
   };
 
   const share = async () => {
-    const url = `${window.location.origin}/?lang=${lang}`;
+    const url = `${window.location.origin}${langPath(lang)}`;
     if (navigator.share) {
       try {
         await navigator.share({ text: copy.shareText, url });

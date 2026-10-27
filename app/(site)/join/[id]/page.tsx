@@ -1,6 +1,11 @@
 import Logo from "@/app/components/Logo";
 import Image from "next/image";
 
+export const metadata = {
+  title: "You've been invited",
+  robots: { index: false, follow: true },
+};
+
 interface PageProps {
   params: Promise<{
     id: string;

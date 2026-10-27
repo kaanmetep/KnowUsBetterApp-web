@@ -2,8 +2,9 @@ import Logo from "@/app/components/Logo";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Policy - KnowUsBetter",
-  description: "Privacy Policy for KnowUsBetter app",
+  title: "Privacy Policy",
+  description: "Privacy Policy for the KnowUsBetter couples quiz app.",
+  alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {
