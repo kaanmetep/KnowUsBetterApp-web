@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: October 23, 2026
+            Last updated: November 15, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -40,7 +40,8 @@ export default function PrivacyPolicyPage() {
               answers during a game (including short typed answers), reports
               you send about other players, in-app purchase records (handled
               through RevenueCat), an optional push notification token, and
-              analytics and crash data used to improve the app.
+              analytics, crash and error data and occasional screen
+              recordings used to improve the app.
             </p>
 
             {/* Information We Collect */}
@@ -134,8 +135,8 @@ export default function PrivacyPolicyPage() {
                   Analytics and Crash Data
                 </h3>
                 <p>
-                  We use PostHog for product analytics and Sentry for crash
-                  reports. Product analytics records how the app is used,
+                  We use PostHog for product analytics, crash and error
+                  reports, and session recordings. Product analytics records how the app is used,
                   linked to your anonymous device ID: app opens, screens
                   viewed, onboarding steps, creating and joining rooms, sharing
                   an invite, starting, finishing or leaving a game, answering
@@ -147,9 +148,21 @@ export default function PrivacyPolicyPage() {
                   these events we receive device information (device model, OS
                   version), app version, language, IP address and the
                   approximate location (country and city) derived from it.
-                  Crash reports include error logs when the app fails. This
-                  data helps us understand which features people use, improve
-                  the app and fix bugs. We do not use it for advertising.
+                  Crash and error reports include error messages, stack traces
+                  and the last few steps in the app before the error (such as
+                  the screen you were on or a lost connection). To find out why
+                  games drop, we also record connection events: when the
+                  connection to our servers is lost or restored, the technical
+                  reason, how long it lasted, the room code, whether the app
+                  was in the background and your network type (Wi-Fi or
+                  cellular). For a share of sessions we record a replay of the
+                  app's screens to see where the app gets stuck. Text you type,
+                  your answers, the statements in Two Truths and a Lie, and AI
+                  Match Analysis reports are masked and never recorded; other
+                  on-screen text, such as the names shown in a room, can appear
+                  in a recording. This data helps us understand which features
+                  people use, improve the app and fix bugs. We do not use it
+                  for advertising.
                 </p>
               </div>
             </div>
@@ -305,16 +318,20 @@ export default function PrivacyPolicyPage() {
 
               <div>
                 <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
-                  PostHog (Product Analytics)
+                  PostHog (Product Analytics, Error Tracking and Session
+                  Recordings)
                 </h3>
                 <p>
-                  We use PostHog to understand how the app is used. PostHog
-                  receives the in-app events described under "Analytics and
-                  Crash Data" above, together with your anonymous device ID,
-                  device model, OS version, app version, language, IP address
-                  and approximate location (country and city). It never
-                  receives your display name, your answers, or any payment
-                  details. PostHog processes this data on our behalf on servers
+                  We use PostHog to understand how the app is used and to find
+                  and fix crashes and errors. PostHog receives the in-app
+                  events, crash and error reports, connection events and
+                  session recordings described under "Analytics and Crash
+                  Data" above, together with your anonymous device ID, device
+                  model, OS version, app version, language, network type, IP
+                  address and approximate location (country and city). It never
+                  receives your answers or any payment details; names can
+                  appear only as on-screen text in a session recording.
+                  PostHog processes this data on our behalf on servers
                   in the United States, and we do not use it for advertising or
                   to track you across other apps or websites. You can learn
                   more at{" "}
@@ -325,30 +342,6 @@ export default function PrivacyPolicyPage() {
                     className="underline hover:text-red-950 dark:hover:text-red-100"
                   >
                     PostHog Privacy Policy
-                  </a>
-                  .
-                </p>
-              </div>
-
-              <div>
-                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
-                  Sentry (Error Tracking)
-                </h3>
-                <p>
-                  We use Sentry to monitor app crashes and errors. When the app
-                  encounters an error or crashes, Sentry collects technical
-                  information such as error messages, stack traces, device type,
-                  OS version, app version, and IP address. For a small share of
-                  sessions, Sentry may also record a replay of the app's screens
-                  with text and images masked. This data helps us identify and
-                  fix bugs quickly. You can learn more at{" "}
-                  <a
-                    href="https://sentry.io/privacy/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:text-red-950 dark:hover:text-red-100"
-                  >
-                    Sentry Privacy Policy
                   </a>
                   .
                 </p>
