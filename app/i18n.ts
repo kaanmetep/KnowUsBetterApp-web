@@ -1,4 +1,4 @@
-export const LANGS = ["en", "tr", "es"] as const;
+export const LANGS = ["en", "tr", "es", "pt"] as const;
 export type Lang = (typeof LANGS)[number];
 
 export const SITE_URL = "https://www.knowusbetter.app";
@@ -6,7 +6,7 @@ export const APP_STORE_ID = "6754946265";
 export const APP_STORE_URL = `https://apps.apple.com/app/id${APP_STORE_ID}`;
 export const LANG_COOKIE = "lang";
 
-export const LANG_NAME: Record<Lang, string> = { en: "English", tr: "Türkçe", es: "Español" };
+export const LANG_NAME: Record<Lang, string> = { en: "English", tr: "Türkçe", es: "Español", pt: "Português" };
 
 export function isLang(value: string | null | undefined): value is Lang {
   return !!value && (LANGS as readonly string[]).includes(value);

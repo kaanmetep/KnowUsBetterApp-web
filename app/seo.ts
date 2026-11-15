@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { COPY } from "./content";
 import { APP_STORE_ID, LANGS, SITE_URL, langPath, type Lang } from "./i18n";
 
-const OG_LOCALE: Record<Lang, string> = { en: "en_US", tr: "tr_TR", es: "es_ES" };
+const OG_LOCALE: Record<Lang, string> = { en: "en_US", tr: "tr_TR", es: "es_ES", pt: "pt_BR" };
 
 const OG_IMAGE = { url: "/images/og.png", width: 1200, height: 630, alt: "KnowUsBetter: Couple Quiz Game" };
 
@@ -90,5 +90,15 @@ const KEYWORDS: Record<Lang, string[]> = {
     "test de pareja",
     "juegos para parejas a distancia",
     "test de compatibilidad",
+  ],
+  pt: [
+    "KnowUsBetter",
+    "Know Us Better",
+    "quiz para casais",
+    "jogo de perguntas para casais",
+    "quanto você conhece seu namorado",
+    "teste de casal",
+    "jogos para casais à distância",
+    "teste de compatibilidade",
   ],
 };

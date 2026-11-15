@@ -10,7 +10,7 @@ export { viewport } from "../seo";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [{ lang: "tr" }, { lang: "es" }];
+  return [{ lang: "tr" }, { lang: "es" }, { lang: "pt" }];
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
