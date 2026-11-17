@@ -24,7 +24,7 @@ export default function TermsOfServicePage() {
             Terms of Service / Terms of Use
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: November 15, 2026
+            Last updated: November 16, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -48,8 +48,9 @@ export default function TermsOfServicePage() {
               2. Description of Service
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
-              KnowUsBetter is a real-time question game for two players,
-              played in private rooms that are joined with a room code. The
+              KnowUsBetter is a question game for two players, played in
+              private rooms. Players can take turns on one device, or each
+              play on their own device and join the room with a room code. The
               App offers several categories and game modes. Players answer by
               choosing an option or, for some questions, by typing a short
               answer. Players can earn or purchase virtual coins to unlock

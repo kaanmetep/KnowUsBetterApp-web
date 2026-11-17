@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: November 15, 2026
+            Last updated: November 16, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -87,7 +87,10 @@ export default function PrivacyPolicyPage() {
                   scored. Typed answers are never shown to anyone outside your
                   room and are never published. Before your answer is shown, it
                   is automatically checked for harmful content (see "Safety and
-                  Moderation" below).
+                  Moderation" below). In one-phone mode, both players answer on
+                  the same device, and the partner name and avatar you enter
+                  for the other player are sent to our game server and handled
+                  like the display name and avatar of any other player.
                 </p>
               </div>
 

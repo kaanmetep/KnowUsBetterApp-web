@@ -56,9 +56,9 @@ export const COPY: Record<Lang, Copy> = {
     meta: {
       title: "KnowUsBetter: Couple Quiz Game | How Well Do You Know Your Partner?",
       description:
-        "Free real-time couples quiz for iPhone. Answer the same questions on two phones, see where you match, get a compatibility score and an AI relationship report. No sign-up.",
+        "Free couples quiz for iPhone. Take turns on one phone or play live on two, see where you match, get a compatibility score and an AI relationship report. No sign-up.",
       ogTitle: "KnowUsBetter: How well do you really know them?",
-      ogDescription: "The real-time couples quiz game. Two phones, one question, answered at the same time. Free on iPhone.",
+      ogDescription: "The couples quiz game. Take turns on one phone or play live on two, then see where you match. Free on iPhone.",
     },
     alt: {
       icon: "KnowUsBetter app icon",
@@ -72,23 +72,27 @@ export const COPY: Record<Lang, Copy> = {
       items: [
         {
           q: "What is KnowUsBetter?",
-          a: "KnowUsBetter (also written “Know Us Better”) is a free, real-time couples quiz game for iPhone. You and your partner answer the same questions on your own phones at the same time, then see where you matched, get a compatibility score and an optional AI relationship report.",
+          a: "KnowUsBetter (also written “Know Us Better”) is a free couples quiz game for iPhone. You and your partner answer the same questions, taking turns on one phone or each on your own phone at the same time, then see where you matched, get a compatibility score and an optional AI relationship report.",
         },
         {
           q: "How do you play KnowUsBetter?",
-          a: "One of you creates a room and picks a category, then shares the room code. You both answer on your own phones at the same time and see your matches live, question by question. A game takes about five minutes.",
+          a: "Create a room and pick a category. Sitting together? Choose One phone, add your partner's name and take turns: answers stay hidden until the reveal. Apart? Choose Separate phones and share the room code, then you both answer at the same time and see your matches live. A game takes about five minutes.",
+        },
+        {
+          q: "Do we both need to download the app?",
+          a: "No. If you're together, one phone is enough and your partner doesn't need to download anything: you take turns on the same phone and see your results together. To play from two phones, you each need the app.",
         },
         {
           q: "What game modes are there?",
-          a: "There are three modes. Match Mode: answer the same questions and see how often you think alike. Know Me Well?: guess your partner's answers. Who Knows Better?: go head to head and see who knows the other best.",
+          a: "There are 10+ ways to play. Answer the same questions and see how often you think alike, with categories from just met to years together, deep talks and intimacy. Know Me Well?: guess your partner's answers. Who Knows Better?: go head to head in a quiz. Plus Who's More Likely?, Rank It and Two Truths & a Lie.",
         },
         {
           q: "Is KnowUsBetter free?",
-          a: "Yes. KnowUsBetter is free to download and needs no account or login. You get free coins every 2 hours, and optional coin packs are a one-time purchase with no subscription.",
+          a: "Yes. KnowUsBetter is free to download and needs no account or login. You get free coins every 4 hours, and optional coin packs are a one-time purchase with no subscription.",
         },
         {
           q: "Can long-distance couples play?",
-          a: "Yes. Each person plays on their own phone, so you can play on the same couch or from different countries. It is a popular date night game for long-distance relationships.",
+          a: "Yes. Choose Separate phones and each of you plays on your own phone, from the same couch or from different countries. It is a popular date night game for long-distance relationships.",
         },
         {
           q: "What is the AI relationship report?",
@@ -112,7 +116,7 @@ export const COPY: Record<Lang, Copy> = {
     hero: {
       eyebrow: "The couples quiz game",
       headline: "How well do you <em>really</em> know them?",
-      sub: "Two phones, one question, answered at the same time. Then you see where you matched, and where you didn't.",
+      sub: "One phone or two, same questions, no peeking. Then you see where you matched, and where you didn't.",
       note: "Free on iPhone · English, Türkçe, Español, Português",
       scan: "Point your iPhone camera here",
       partner: { thinking: "Jake is thinking", answered: "Jake answered", picked: "Jake picked this too" },
@@ -139,7 +143,7 @@ export const COPY: Record<Lang, Copy> = {
       doneEyebrow: "3 guesses locked in",
       doneTitle: "Now, would they guess <em>yours</em>?",
       doneBody:
-        "You can't find out from here. In the app you both answer on your own phones, and the results land side by side.",
+        "You can't find out from here. In the app you both answer, on one phone or two, and the results land side by side.",
       play: "Find out in the app",
       send: "Send them this quiz",
       copied: "Link copied",
@@ -151,7 +155,7 @@ export const COPY: Record<Lang, Copy> = {
       title: "Five minutes to play. Hours to talk about.",
       steps: [
         { title: "Pick a vibe", body: "Just met, years in, or just friends. The questions fit where you are." },
-        { title: "Answer at once", body: "Same question on both phones. No peeking, no waiting." },
+        { title: "Answer, no peeking", body: "Take turns on one phone or answer at once on two. Answers stay hidden until the reveal." },
         { title: "See your match", body: "Your answers side by side, plus an AI report on what they say about you two." },
       ],
     },
@@ -182,9 +186,9 @@ export const COPY: Record<Lang, Copy> = {
     meta: {
       title: "KnowUsBetter: Çiftler İçin Quiz Oyunu | Partnerini Ne Kadar Tanıyorsun?",
       description:
-        "iPhone için ücretsiz, eş zamanlı çift testi. İki telefonda aynı soruları cevaplayın, nerede eşleştiğinizi görün, uyum puanı ve yapay zeka ilişki raporu alın. Üyelik gerekmez.",
+        "iPhone için ücretsiz çift testi. İster tek telefondan, ister farklı telefonlardan oynayın, nerede eşleştiğinizi görün, uyum puanı ve yapay zeka ilişki raporu alın. Üyelik gerekmez.",
       ogTitle: "KnowUsBetter: Partnerini gerçekten tanıyor musun?",
-      ogDescription: "Çiftler için eş zamanlı quiz oyunu. İki telefon, tek soru, aynı anda cevap. iPhone'da ücretsiz.",
+      ogDescription: "Çiftler için quiz oyunu. İster tek telefondan, ister farklı telefonlardan oynayın, nerede eşleştiğinizi görün. iPhone'da ücretsiz.",
     },
     alt: {
       icon: "KnowUsBetter uygulama ikonu",
@@ -198,23 +202,27 @@ export const COPY: Record<Lang, Copy> = {
       items: [
         {
           q: "KnowUsBetter nedir?",
-          a: "KnowUsBetter (“Know Us Better” olarak da yazılır), iPhone için ücretsiz ve eş zamanlı bir çiftler quiz oyunudur. Sen ve partnerin aynı soruları kendi telefonlarınızdan aynı anda cevaplarsınız, sonra nerede eşleştiğinizi görür, uyum puanınızı ve isteğe bağlı yapay zeka ilişki raporunuzu alırsınız.",
+          a: "KnowUsBetter (“Know Us Better” olarak da yazılır), iPhone için ücretsiz bir çiftler quiz oyunudur. Sen ve partnerin aynı soruları ister tek telefondan sırayla, ister farklı telefonlardan aynı anda cevaplarsınız, sonra nerede eşleştiğinizi görür, uyum puanınızı ve isteğe bağlı yapay zeka ilişki raporunuzu alırsınız.",
         },
         {
           q: "KnowUsBetter nasıl oynanır?",
-          a: "Biriniz bir oda kurup kategori seçer ve oda kodunu paylaşır. İkiniz de kendi telefonunuzdan aynı anda cevaplarsınız ve eşleşmelerinizi soru soru canlı görürsünüz. Bir oyun yaklaşık beş dakika sürer.",
+          a: "Bir oda kurup kategori seçin. Yan yanaysanız Tek telefon'u seçin, partnerinin adını girin ve sırayla cevaplayın: cevaplar sonuca kadar gizli kalır. Ayrıysanız Farklı telefonlar'ı seçip oda kodunu paylaşın; ikiniz aynı anda cevaplar, eşleşmelerinizi canlı görürsünüz. Bir oyun yaklaşık beş dakika sürer.",
+        },
+        {
+          q: "İkimizin de uygulamayı indirmesi gerekiyor mu?",
+          a: "Hayır. Yan yanaysanız tek telefon yeter, partnerinin bir şey indirmesine gerek yok: aynı telefonda sırayla cevaplar, sonuçları birlikte görürsünüz. İki telefondan oynamak için ikinizde de uygulama olmalı.",
         },
         {
           q: "Hangi oyun modları var?",
-          a: "Üç mod var. Eşleşme Modu: aynı soruları cevaplayın ve ne kadar aynı düşündüğünüzü görün. Beni İyi Tanıyor musun?: partnerinin cevaplarını tahmin et. Kim Daha İyi Tanıyor?: kafa kafaya yarışın ve birbirinizi kimin daha iyi tanıdığını görün.",
+          a: "10'dan fazla oynama şekli var. Aynı soruları cevaplayıp ne kadar aynı düşündüğünüzü görün; yeni tanışanlardan yıllardır birlikte olanlara, derin sohbetlerden yakınlığa kadar kategoriler var. Beni İyi Tanıyor musun?: partnerinin cevaplarını tahmin et. Kim Daha İyi Biliyor?: bilgi yarışmasında kafa kafaya. Bir de Kim Daha Yatkın?, Sırala Bakalım ve İki Doğru Bir Yalan.",
         },
         {
           q: "KnowUsBetter ücretsiz mi?",
-          a: "Evet. KnowUsBetter'ı indirmek ücretsizdir ve hesap ya da üyelik gerekmez. Her 2 saatte bir ücretsiz jeton kazanırsın; isteğe bağlı jeton paketleri tek seferlik satın alımdır, abonelik yoktur.",
+          a: "Evet. KnowUsBetter'ı indirmek ücretsizdir ve hesap ya da üyelik gerekmez. Her 4 saatte bir ücretsiz jeton kazanırsın; isteğe bağlı jeton paketleri tek seferlik satın alımdır, abonelik yoktur.",
         },
         {
           q: "Uzak mesafe ilişkisi olan çiftler oynayabilir mi?",
-          a: "Evet. Herkes kendi telefonundan oynadığı için aynı koltukta da, farklı ülkelerde de oynayabilirsiniz. Uzak mesafe ilişkileri için popüler bir randevu gecesi oyunudur.",
+          a: "Evet. Farklı telefonlar'ı seçin, herkes kendi telefonundan oynasın; aynı koltukta da, farklı ülkelerde de oynayabilirsiniz. Uzak mesafe ilişkileri için popüler bir randevu gecesi oyunudur.",
         },
         {
           q: "Yapay zeka ilişki raporu nedir?",
@@ -238,7 +246,7 @@ export const COPY: Record<Lang, Copy> = {
     hero: {
       eyebrow: "Çiftler için quiz oyunu",
       headline: "Partnerini <em>gerçekten</em> tanıyor musun?",
-      sub: "İki telefon, tek soru, aynı anda cevap. Sonra nerede eşleştiğinizi, nerede ayrıldığınızı görürsünüz.",
+      sub: "İster tek telefondan, ister farklı telefonlardan oynayın. Sonra nerede eşleştiğinizi, nerede ayrıldığınızı görün.",
       note: "iPhone'da ücretsiz · Türkçe, English, Español, Português",
       scan: "iPhone kameranı buraya tut",
       partner: { thinking: "Can düşünüyor", answered: "Can cevapladı", picked: "Can de bunu seçti" },
@@ -265,7 +273,7 @@ export const COPY: Record<Lang, Copy> = {
       doneEyebrow: "3 tahmin kaydedildi",
       doneTitle: "Peki o seninkileri <em>bilir</em> mi?",
       doneBody:
-        "Bunu buradan öğrenemezsin. Uygulamada ikiniz de kendi telefonunuzdan cevaplıyorsunuz, sonuçlar yan yana çıkıyor.",
+        "Bunu buradan öğrenemezsin. Uygulamada ister tek telefondan, ister farklı telefonlardan ikiniz de cevaplıyorsunuz, sonuçlar yan yana çıkıyor.",
       play: "Uygulamada öğren",
       send: "Bu testi ona gönder",
       copied: "Link kopyalandı",
@@ -277,7 +285,7 @@ export const COPY: Record<Lang, Copy> = {
       title: "Oynaması beş dakika. Konuşması saatler.",
       steps: [
         { title: "Havanızı seçin", body: "Yeni tanıştınız, yıllardır birliktesiniz ya da sadece arkadaşsınız. Sorular size göre." },
-        { title: "Aynı anda cevaplayın", body: "İki telefonda aynı soru. Kopya yok, bekleme yok." },
+        { title: "Kopya yok", body: "İster tek telefonda sırayla, ister farklı telefonlarda aynı anda. Cevaplar sonuca kadar gizli." },
         { title: "Eşleşmenizi görün", body: "Cevaplarınız yan yana, üstüne ikiniz hakkında bir yapay zeka raporu." },
       ],
     },
@@ -308,9 +316,9 @@ export const COPY: Record<Lang, Copy> = {
     meta: {
       title: "KnowUsBetter: Juego de Preguntas para Parejas | ¿Cuánto Conoces a tu Pareja?",
       description:
-        "Quiz gratis en tiempo real para parejas en iPhone. Respondan las mismas preguntas en dos teléfonos, vean en qué coinciden y reciban una puntuación de compatibilidad y un informe con IA. Sin registro.",
+        "Quiz gratis para parejas en iPhone. Jueguen por turnos en un teléfono o en vivo en dos, vean en qué coinciden y reciban una puntuación de compatibilidad y un informe con IA. Sin registro.",
       ogTitle: "KnowUsBetter: ¿De verdad conoces a tu pareja?",
-      ogDescription: "El quiz en tiempo real para parejas. Dos teléfonos, una pregunta, respondida al mismo tiempo. Gratis en iPhone.",
+      ogDescription: "El quiz para parejas. Por turnos en un teléfono o en vivo en dos, y luego ven en qué coinciden. Gratis en iPhone.",
     },
     alt: {
       icon: "Icono de la app KnowUsBetter",
@@ -324,23 +332,27 @@ export const COPY: Record<Lang, Copy> = {
       items: [
         {
           q: "¿Qué es KnowUsBetter?",
-          a: "KnowUsBetter (también escrito “Know Us Better”) es un juego de preguntas gratis y en tiempo real para parejas en iPhone. Tú y tu pareja responden las mismas preguntas en sus propios teléfonos al mismo tiempo y luego ven en qué coincidieron, con una puntuación de compatibilidad y un informe opcional con IA.",
+          a: "KnowUsBetter (también escrito “Know Us Better”) es un juego de preguntas gratis para parejas en iPhone. Tú y tu pareja responden las mismas preguntas, por turnos en un teléfono o cada uno en el suyo al mismo tiempo, y luego ven en qué coincidieron, con una puntuación de compatibilidad y un informe opcional con IA.",
         },
         {
           q: "¿Cómo se juega a KnowUsBetter?",
-          a: "Uno crea una sala, elige una categoría y comparte el código. Ambos responden en sus teléfonos a la vez y ven sus coincidencias en vivo, pregunta por pregunta. Una partida dura unos cinco minutos.",
+          a: "Creen una sala y elijan una categoría. ¿Están juntos? Elijan Un teléfono, agreguen el nombre de tu pareja y respondan por turnos: las respuestas quedan ocultas hasta el final. ¿Están lejos? Elijan Teléfonos separados y compartan el código; ambos responden a la vez y ven sus coincidencias en vivo. Una partida dura unos cinco minutos.",
+        },
+        {
+          q: "¿Los dos necesitamos descargar la app?",
+          a: "No. Si están juntos, basta un teléfono y tu pareja no necesita descargar nada: responden por turnos en el mismo teléfono y ven los resultados juntos. Para jugar desde dos teléfonos, cada uno necesita la app.",
         },
         {
           q: "¿Qué modos de juego hay?",
-          a: "Hay tres modos. Modo Coincidencia: respondan las mismas preguntas y vean cuánto piensan igual. ¿Me Conoces Bien?: adivina las respuestas de tu pareja. ¿Quién Conoce Mejor?: compitan cara a cara para ver quién conoce mejor al otro.",
+          a: "Hay más de 10 formas de jugar. Respondan las mismas preguntas y vean cuánto piensan igual, con categorías para recién conocidos, parejas de años, charlas profundas e intimidad. ¿Me Conoces Bien?: adivina las respuestas de tu pareja. ¿Quién Sabe Más?: compitan cara a cara en un quiz. Y además ¿Quién es más probable?, Ordénalo y Dos Verdades y una Mentira.",
         },
         {
           q: "¿KnowUsBetter es gratis?",
-          a: "Sí. KnowUsBetter es gratis, sin cuenta ni registro. Recibes monedas gratis cada 2 horas y los paquetes de monedas opcionales son un pago único, sin suscripción.",
+          a: "Sí. KnowUsBetter es gratis, sin cuenta ni registro. Recibes monedas gratis cada 4 horas y los paquetes de monedas opcionales son un pago único, sin suscripción.",
         },
         {
           q: "¿Pueden jugar parejas a distancia?",
-          a: "Sí. Cada persona juega en su propio teléfono, así que pueden jugar en el mismo sofá o desde países distintos. Es un juego ideal para citas en relaciones a distancia.",
+          a: "Sí. Elijan Teléfonos separados y cada uno juega en su propio teléfono, desde el mismo sofá o desde países distintos. Es un juego ideal para citas en relaciones a distancia.",
         },
         {
           q: "¿Qué es el informe de relación con IA?",
@@ -364,7 +376,7 @@ export const COPY: Record<Lang, Copy> = {
     hero: {
       eyebrow: "El quiz para parejas",
       headline: "¿De verdad <em>conoces</em> a tu pareja?",
-      sub: "Dos teléfonos, una pregunta, respondida al mismo tiempo. Después ven en qué coincidieron y en qué no.",
+      sub: "Un teléfono o dos, las mismas preguntas, sin espiar. Después ven en qué coincidieron y en qué no.",
       note: "Gratis en iPhone · Español, English, Português, Türkçe",
       scan: "Apunta aquí con la cámara de tu iPhone",
       partner: { thinking: "Mateo está pensando", answered: "Mateo respondió", picked: "Mateo también eligió esto" },
@@ -391,7 +403,7 @@ export const COPY: Record<Lang, Copy> = {
       doneEyebrow: "3 respuestas guardadas",
       doneTitle: "¿Y adivinaría las <em>tuyas</em>?",
       doneBody:
-        "Desde aquí no lo puedes saber. En la app cada uno responde en su propio teléfono y los resultados aparecen lado a lado.",
+        "Desde aquí no lo puedes saber. En la app responden los dos, en un teléfono o en dos, y los resultados aparecen lado a lado.",
       play: "Descúbrelo en la app",
       send: "Envíale este quiz",
       copied: "Enlace copiado",
@@ -403,7 +415,7 @@ export const COPY: Record<Lang, Copy> = {
       title: "Cinco minutos para jugar. Horas para hablar.",
       steps: [
         { title: "Elijan su vibe", body: "Recién conocidos, años juntos o solo amigos. Las preguntas se adaptan a ustedes." },
-        { title: "Respondan a la vez", body: "La misma pregunta en los dos teléfonos. Sin espiar, sin esperar." },
+        { title: "Sin espiar", body: "Por turnos en un teléfono o a la vez en dos. Las respuestas quedan ocultas hasta el final." },
         { title: "Vean su conexión", body: "Sus respuestas lado a lado, y un informe con IA sobre lo que dicen de ustedes." },
       ],
     },
@@ -434,9 +446,9 @@ export const COPY: Record<Lang, Copy> = {
     meta: {
       title: "KnowUsBetter: Quiz para Casais | Você Conhece Mesmo o Seu Amor?",
       description:
-        "Quiz para casais grátis e em tempo real no iPhone. Respondam às mesmas perguntas em dois celulares, vejam onde combinam, ganhem uma nota de compatibilidade e um relatório do relacionamento com IA. Sem cadastro.",
+        "Quiz para casais grátis no iPhone. Joguem em turnos em um celular ou ao vivo em dois, vejam onde combinam, ganhem uma nota de compatibilidade e um relatório do relacionamento com IA. Sem cadastro.",
       ogTitle: "KnowUsBetter: Você conhece mesmo o seu amor?",
-      ogDescription: "O quiz para casais em tempo real. Dois celulares, uma pergunta, respondida ao mesmo tempo. Grátis no iPhone.",
+      ogDescription: "O quiz para casais. Em turnos em um celular ou ao vivo em dois, e depois vocês veem onde combinam. Grátis no iPhone.",
     },
     alt: {
       icon: "Ícone do app KnowUsBetter",
@@ -450,15 +462,19 @@ export const COPY: Record<Lang, Copy> = {
       items: [
         {
           q: "O que é o KnowUsBetter?",
-          a: "O KnowUsBetter (também escrito “Know Us Better”) é um quiz para casais grátis e em tempo real para iPhone. Você e o seu amor respondem às mesmas perguntas, cada um no seu celular e ao mesmo tempo. Depois vocês veem onde combinaram, ganham uma nota de compatibilidade e podem desbloquear um relatório do relacionamento com IA.",
+          a: "O KnowUsBetter (também escrito “Know Us Better”) é um quiz para casais grátis para iPhone. Você e o seu amor respondem às mesmas perguntas, em turnos em um celular ou cada um no seu, ao mesmo tempo. Depois vocês veem onde combinaram, ganham uma nota de compatibilidade e podem desbloquear um relatório do relacionamento com IA.",
         },
         {
           q: "Como se joga o KnowUsBetter?",
-          a: "Um de vocês cria uma sala, escolhe uma categoria e compartilha o código da sala. Os dois respondem ao mesmo tempo, cada um no seu celular, e veem as respostas em comum ao vivo, pergunta por pergunta. Uma partida dura uns cinco minutos.",
+          a: "Criem uma sala e escolham uma categoria. Estão juntos? Escolham Um celular, coloquem o nome do seu amor e respondam em turnos: as respostas ficam escondidas até o final. Estão longe? Escolham Celulares separados e compartilhem o código; os dois respondem ao mesmo tempo e veem as respostas em comum ao vivo. Uma partida dura uns cinco minutos.",
+        },
+        {
+          q: "Os dois precisam baixar o app?",
+          a: "Não. Se vocês estão juntos, um celular basta e o seu amor não precisa baixar nada: vocês respondem em turnos no mesmo celular e veem o resultado juntos. Para jogar em dois celulares, cada um precisa do app.",
         },
         {
           q: "Quais modos de jogo existem?",
-          a: "São três modos. Modo Compatibilidade: respondam às mesmas perguntas e vejam o quanto pensam igual. Você Me Conhece Bem?: adivinhe as respostas do seu amor. Quem Sabe Mais?: disputem cara a cara para ver quem conhece melhor o outro.",
+          a: "São mais de 10 jeitos de jogar. Respondam às mesmas perguntas e vejam o quanto pensam igual, com categorias para recém-conhecidos, casais de longa data, papo profundo e intimidade. Você Me Conhece Bem?: adivinhe as respostas do seu amor. Quem Sabe Mais?: disputem cara a cara num quiz. E ainda Quem É Mais Provável?, Ordena Aí e Duas Verdades e uma Mentira.",
         },
         {
           q: "O KnowUsBetter é grátis?",
@@ -466,7 +482,7 @@ export const COPY: Record<Lang, Copy> = {
         },
         {
           q: "Casais à distância podem jogar?",
-          a: "Sim. Cada pessoa joga no próprio celular, então dá para jogar no mesmo sofá ou em países diferentes. É um jogo muito usado para encontros em relacionamentos à distância.",
+          a: "Sim. Escolham Celulares separados e cada um joga no próprio celular, do mesmo sofá ou de países diferentes. É um jogo muito usado para encontros em relacionamentos à distância.",
         },
         {
           q: "O que é o relatório do relacionamento com IA?",
@@ -490,7 +506,7 @@ export const COPY: Record<Lang, Copy> = {
     hero: {
       eyebrow: "O quiz para casais",
       headline: "Você <em>conhece</em> mesmo o seu amor?",
-      sub: "Dois celulares, uma pergunta, respondida ao mesmo tempo. Depois vocês veem onde combinaram e onde não.",
+      sub: "Um celular ou dois, as mesmas perguntas, sem espiar. Depois vocês veem onde combinaram e onde não.",
       note: "Grátis no iPhone · Português, English, Español, Türkçe",
       scan: "Aponte a câmera do seu iPhone aqui",
       partner: { thinking: "Lucas está pensando", answered: "Lucas respondeu", picked: "Lucas também escolheu isso" },
@@ -517,7 +533,7 @@ export const COPY: Record<Lang, Copy> = {
       doneEyebrow: "3 palpites registrados",
       doneTitle: "E será que adivinhariam os <em>seus</em>?",
       doneBody:
-        "Por aqui não dá para saber. No app, cada um responde no próprio celular e os resultados aparecem lado a lado.",
+        "Por aqui não dá para saber. No app, os dois respondem, em um celular ou em dois, e os resultados aparecem lado a lado.",
       play: "Descubra no app",
       send: "Mande este quiz",
       copied: "Link copiado",
@@ -529,7 +545,7 @@ export const COPY: Record<Lang, Copy> = {
       title: "Cinco minutos para jogar. Horas para conversar.",
       steps: [
         { title: "Escolham a vibe", body: "Recém-conhecidos, anos juntos ou só amigos. As perguntas combinam com o momento de vocês." },
-        { title: "Respondam juntos", body: "A mesma pergunta nos dois celulares. Sem espiar, sem esperar." },
+        { title: "Sem espiar", body: "Em turnos em um celular ou ao mesmo tempo em dois. As respostas ficam escondidas até o final." },
         { title: "Vejam a sintonia", body: "As respostas lado a lado, mais um relatório com IA sobre o que elas dizem de vocês." },
       ],
     },
