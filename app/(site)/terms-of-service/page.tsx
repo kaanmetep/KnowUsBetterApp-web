@@ -24,7 +24,7 @@ export default function TermsOfServicePage() {
             Terms of Service / Terms of Use
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: November 16, 2026
+            Last updated: November 17, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -54,7 +54,9 @@ export default function TermsOfServicePage() {
               App offers several categories and game modes. Players answer by
               choosing an option or, for some questions, by typing a short
               answer. Players can earn or purchase virtual coins to unlock
-              categories and optional features such as the AI Match Analysis.
+              categories and optional features such as the AI Match Analysis,
+              or buy the optional weekly Unlimited subscription described in
+              Section 5.
               The App is intended for entertainment purposes only. All
               gameplay, questions, and AI-generated content are offered "as
               is" without warranty of accuracy or completeness.
@@ -74,7 +76,10 @@ export default function TermsOfServicePage() {
               currency (coins) you purchase is tied to that device/account.
               Coins have no cash value and cannot be transferred to another
               user, account, or device. In other words, coins are
-              non-transferable and non-redeemable outside the App.
+              non-transferable and non-redeemable outside the App. An
+              Unlimited subscription belongs to the Apple ID or Google account
+              that bought it and can be restored on another device signed in
+              to the same account (see Section 5).
             </p>
 
             {/* 4. Virtual Currency and In-App Purchases */}
@@ -110,9 +115,69 @@ export default function TermsOfServicePage() {
               </p>
             </div>
 
-            {/* 5. Acceptable Use and No Objectionable Content */}
+            {/* 5. Unlimited Subscription */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              5. Acceptable Use and No Objectionable Content
+              5. Unlimited Subscription (Auto-Renewing)
+            </h2>
+            <div className="mb-6 space-y-4 text-red-900 dark:text-red-300">
+              <p>
+                KnowUsBetter offers an optional auto-renewing subscription
+                called "Unlimited". While it is active, you can start games in
+                every category without spending coins, including categories
+                with the AI Match Analysis. When one player in a room has an
+                active subscription, these benefits apply to the whole room,
+                so both players can play. Reactions and other extras may still
+                cost coins. We may add, change, or remove subscription benefits
+                over time.
+              </p>
+              <ul className="list-disc space-y-2 pl-6">
+                <li>
+                  <strong>Length and price:</strong> the subscription renews
+                  every week. The price is shown in the App before you buy and
+                  depends on your country and currency. There is no free
+                  trial.
+                </li>
+                <li>
+                  <strong>Payment:</strong> payment is charged to your Apple ID
+                  (or Google Play account) when you confirm the purchase.
+                </li>
+                <li>
+                  <strong>Automatic renewal:</strong> the subscription renews
+                  automatically at the same price for another week unless
+                  auto-renew is turned off at least 24 hours before the end of
+                  the current period. Your account is charged for the renewal
+                  within 24 hours before the current period ends.
+                </li>
+                <li>
+                  <strong>Cancelling:</strong> you can manage or cancel the
+                  subscription at any time in your App Store account settings
+                  (Settings › your name › Subscriptions) or in Google Play.
+                  Deleting the App does not cancel it. After you cancel, the
+                  subscription stays active until the end of the period you
+                  already paid for, and no refund is given for the remaining
+                  time, except as required by law or by Apple's or Google's
+                  refund policies.
+                </li>
+                <li>
+                  <strong>Price changes:</strong> if the price changes, Apple
+                  or Google will tell you in advance and, where required, ask
+                  for your consent before charging the new price.
+                </li>
+                <li>
+                  <strong>Restoring:</strong> you can restore an active
+                  subscription with "Restore" in the App's store screen while
+                  signed in to the same Apple ID or Google account.
+                </li>
+              </ul>
+              <p>
+                Refund requests for subscriptions are handled by Apple or
+                Google, as described in Section 4.
+              </p>
+            </div>
+
+            {/* 6. Acceptable Use and No Objectionable Content */}
+            <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
+              6. Acceptable Use and No Objectionable Content
             </h2>
 
             <p className="mb-4 text-red-900 dark:text-red-300">
@@ -251,9 +316,9 @@ export default function TermsOfServicePage() {
               understand and accept these Terms.
             </p>
 
-            {/* 6. Intellectual Property */}
+            {/* 7. Intellectual Property */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              6. Intellectual Property
+              7. Intellectual Property
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               All content in the App – including quiz questions, text, images,
@@ -267,9 +332,9 @@ export default function TermsOfServicePage() {
               content is a violation of these Terms and applicable law.
             </p>
 
-            {/* 7. Privacy and Data Collection */}
+            {/* 8. Privacy and Data Collection */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              7. Privacy and Data Collection
+              8. Privacy and Data Collection
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               Your use of the App is also governed by our{" "}
@@ -293,9 +358,9 @@ export default function TermsOfServicePage() {
               more, please consult our Privacy Policy.
             </p>
 
-            {/* 8. Disclaimers */}
+            {/* 9. Disclaimers */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              8. Disclaimers
+              9. Disclaimers
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               The App is provided on an "as is" and "as available" basis. We
@@ -312,9 +377,9 @@ export default function TermsOfServicePage() {
               from your use of the App or reliance on its content.
             </p>
 
-            {/* 9. Limitation of Liability */}
+            {/* 10. Limitation of Liability */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              9. Limitation of Liability
+              10. Limitation of Liability
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               To the maximum extent allowed by law, KnowUsBetter (and its
@@ -326,9 +391,9 @@ export default function TermsOfServicePage() {
               of such damages, our liability is strictly limited as above.
             </p>
 
-            {/* 10. Termination */}
+            {/* 11. Termination */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              10. Termination
+              11. Termination
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               We reserve the right to suspend or terminate your access to the
@@ -336,12 +401,14 @@ export default function TermsOfServicePage() {
               Terms. Upon termination, you must stop using the App and delete it
               from your device. Terminating the App or your device's access will
               not entitle you to any compensation, and any unused coins will be
-              forfeited.
+              forfeited. Termination does not cancel an Unlimited subscription
+              billed by Apple or Google; you can cancel it in your store
+              account settings as described in Section 5.
             </p>
 
-            {/* 11. Changes to Terms */}
+            {/* 12. Changes to Terms */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              11. Changes to Terms
+              12. Changes to Terms
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               KnowUsBetter may update these Terms of Service at any time. If we
@@ -351,9 +418,9 @@ export default function TermsOfServicePage() {
               effect means you agree to be bound by the new Terms.
             </p>
 
-            {/* 12. Governing Law */}
+            {/* 13. Governing Law */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              12. Governing Law
+              13. Governing Law
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               These Terms are governed by and construed in accordance with the
@@ -362,9 +429,9 @@ export default function TermsOfServicePage() {
               the courts of Turkey.
             </p>
 
-            {/* 13. Contact Information */}
+            {/* 14. Contact Information */}
             <h2 className="mb-4 mt-8 text-2xl font-bold text-red-950 dark:text-red-200">
-              13. Contact Information
+              14. Contact Information
             </h2>
             <p className="mb-6 text-red-900 dark:text-red-300">
               If you have any questions or concerns about these Terms, please

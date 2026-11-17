@@ -88,7 +88,7 @@ export const COPY: Record<Lang, Copy> = {
         },
         {
           q: "Is KnowUsBetter free?",
-          a: "Yes. KnowUsBetter is free to download and needs no account or login. You get free coins every 4 hours, and optional coin packs are a one-time purchase with no subscription.",
+          a: "Yes. KnowUsBetter is free to download and needs no account or login. You get free coins every 4 hours, and optional coin packs are one-time purchases.",
         },
         {
           q: "Can long-distance couples play?",
@@ -218,7 +218,7 @@ export const COPY: Record<Lang, Copy> = {
         },
         {
           q: "KnowUsBetter ücretsiz mi?",
-          a: "Evet. KnowUsBetter'ı indirmek ücretsizdir ve hesap ya da üyelik gerekmez. Her 4 saatte bir ücretsiz jeton kazanırsın; isteğe bağlı jeton paketleri tek seferlik satın alımdır, abonelik yoktur.",
+          a: "Evet. KnowUsBetter'ı indirmek ücretsizdir ve hesap ya da üyelik gerekmez. Her 4 saatte bir ücretsiz jeton kazanırsın; isteğe bağlı jeton paketleri tek seferlik satın alımlardır.",
         },
         {
           q: "Uzak mesafe ilişkisi olan çiftler oynayabilir mi?",
@@ -348,7 +348,7 @@ export const COPY: Record<Lang, Copy> = {
         },
         {
           q: "¿KnowUsBetter es gratis?",
-          a: "Sí. KnowUsBetter es gratis, sin cuenta ni registro. Recibes monedas gratis cada 4 horas y los paquetes de monedas opcionales son un pago único, sin suscripción.",
+          a: "Sí. KnowUsBetter es gratis, sin cuenta ni registro. Recibes monedas gratis cada 4 horas y los paquetes de monedas opcionales son pagos únicos.",
         },
         {
           q: "¿Pueden jugar parejas a distancia?",
@@ -478,7 +478,7 @@ export const COPY: Record<Lang, Copy> = {
         },
         {
           q: "O KnowUsBetter é grátis?",
-          a: "Sim. O KnowUsBetter é grátis para baixar e não precisa de conta nem login. Você ganha moedas grátis várias vezes ao dia, e os pacotes de moedas opcionais são uma compra única, sem assinatura.",
+          a: "Sim. O KnowUsBetter é grátis para baixar e não precisa de conta nem login. Você ganha moedas grátis várias vezes ao dia, e os pacotes de moedas opcionais são compras únicas.",
         },
         {
           q: "Casais à distância podem jogar?",

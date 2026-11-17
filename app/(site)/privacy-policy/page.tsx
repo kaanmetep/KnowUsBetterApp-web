@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: November 16, 2026
+            Last updated: November 17, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -224,7 +224,10 @@ export default function PrivacyPolicyPage() {
                 <p>
                   We use purchase data to grant you coins or subscriptions.
                   RevenueCat validates the purchase and notifies us so we can
-                  credit your account. We also record purchase events
+                  credit your account. For the Unlimited subscription we store
+                  only its status (when the current period ends and whether it
+                  renews), linked to your device ID, so a game can start
+                  without spending coins. We also record purchase events
                   (product, price and currency) in our product analytics to
                   understand which packages people choose. We never use
                   purchase data for advertising or marketing.
