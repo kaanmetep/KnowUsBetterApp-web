@@ -1,7 +1,10 @@
-export const LANGS = ["en", "tr", "es", "pt", "de", "it", "pl"] as const;
+export const LANGS = ["en", "tr", "es", "pt", "de", "it", "pl", "fr", "ja", "nl"] as const;
 export type Lang = (typeof LANGS)[number];
 
-/** Languages that have their own app screenshots in public/screens; others fall back to English. */
+/**
+ * Languages that have their own app screenshots in public/screens/<lang>; others fall back to English.
+ * Every language has them now; list a new language here only after rendering its screens.
+ */
 export const SCREEN_LANGS: readonly Lang[] = LANGS;
 
 export function screenLang(lang: Lang): Lang {
@@ -21,6 +24,9 @@ export const LANG_NAME: Record<Lang, string> = {
   de: "Deutsch",
   it: "Italiano",
   pl: "Polski",
+  fr: "Français",
+  ja: "日本語",
+  nl: "Nederlands",
 };
 
 export function isLang(value: string | null | undefined): value is Lang {

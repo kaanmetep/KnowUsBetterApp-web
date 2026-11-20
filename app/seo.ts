@@ -2,7 +2,18 @@ import type { Metadata, Viewport } from "next";
 import { COPY } from "./content";
 import { APP_STORE_ID, LANGS, SITE_URL, langPath, type Lang } from "./i18n";
 
-const OG_LOCALE: Record<Lang, string> = { en: "en_US", tr: "tr_TR", es: "es_ES", pt: "pt_BR", de: "de_DE", it: "it_IT", pl: "pl_PL" };
+const OG_LOCALE: Record<Lang, string> = {
+  en: "en_US",
+  tr: "tr_TR",
+  es: "es_ES",
+  pt: "pt_BR",
+  de: "de_DE",
+  it: "it_IT",
+  pl: "pl_PL",
+  fr: "fr_FR",
+  ja: "ja_JP",
+  nl: "nl_NL",
+};
 
 const OG_IMAGE = { url: "/images/og.png", width: 1200, height: 630, alt: "KnowUsBetter: Couple Quiz Game" };
 
@@ -132,5 +143,37 @@ const KEYWORDS: Record<Lang, string[]> = {
     "test dla par",
     "gry dla par na odległość",
     "test zgodności dla par",
+  ],
+  fr: [
+    "KnowUsBetter",
+    "Know Us Better",
+    "quiz pour couples",
+    "jeu de couple",
+    "jeu de questions pour couple",
+    "tu connais bien ta moitié",
+    "test de couple",
+    "jeux pour couple à distance",
+    "test de compatibilité amoureuse",
+  ],
+  ja: [
+    "KnowUsBetter",
+    "Know Us Better",
+    "カップル クイズ",
+    "カップル ゲーム",
+    "恋人 質問ゲーム",
+    "カップル 相性診断",
+    "遠距離恋愛 ゲーム",
+    "カップル アプリ",
+  ],
+  nl: [
+    "KnowUsBetter",
+    "Know Us Better",
+    "quiz voor koppels",
+    "koppelquiz",
+    "spel voor koppels",
+    "hoe goed ken je je partner",
+    "relatietest",
+    "spellen voor een lange-afstandsrelatie",
+    "compatibiliteitstest voor koppels",
   ],
 };

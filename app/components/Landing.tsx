@@ -18,8 +18,12 @@ function ScanCode({ label }: { label: string }) {
   );
 }
 
+/** Quotation marks around the "Tonight" question, in each language's own style. */
+const QUOTES: Partial<Record<Lang, [string, string]>> = { fr: ["«\u00a0", "\u00a0»"], ja: ["「", "」"] };
+
 export default function Landing({ lang, tonightIndex }: { lang: Lang; tonightIndex: number }) {
   const c = COPY[lang];
+  const quote = QUOTES[lang] ?? ["“", "”"];
 
   return (
     <div lang={lang} className="paper overflow-x-clip bg-bg">
@@ -152,9 +156,9 @@ export default function Landing({ lang, tonightIndex }: { lang: Lang; tonightInd
           />
           <span className="eyebrow mt-8">{c.tonight.eyebrow}</span>
           <p className="mt-6 max-w-[620px] text-balance font-serif text-[28px] font-bold leading-[1.35] text-ink sm:text-[38px]">
-            <span className="text-accent">“</span>
+            <span className="text-accent">{quote[0]}</span>
             {c.tonight.questions[tonightIndex]}
-            <span className="text-accent">”</span>
+            <span className="text-accent">{quote[1]}</span>
           </p>
           <p className="mt-5 text-[16px] text-muted">{c.tonight.after}</p>
           <div className="mt-9 flex items-center gap-6" data-cta>
@@ -162,7 +166,7 @@ export default function Landing({ lang, tonightIndex }: { lang: Lang; tonightInd
             <ScanCode label={c.hero.scan} />
           </div>
 
-          <nav className="mt-16 flex items-center gap-2 text-[13px] font-semibold text-faint">
+          <nav className="mt-16 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[13px] font-semibold text-faint">
             {LANGS.map((code, i) => (
               <span key={code} className="flex items-center gap-2">
                 {i > 0 && <span className="text-[#e6d9dd]">·</span>}

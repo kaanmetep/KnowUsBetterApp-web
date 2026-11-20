@@ -1,4 +1,4 @@
-import { Libre_Baskerville, Merriweather_Sans } from "next/font/google";
+import { Libre_Baskerville, Merriweather_Sans, Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import Footer from "./Footer";
 import type { Lang } from "../i18n";
 import "../globals.css";
@@ -15,9 +15,27 @@ const merriweatherSans = Merriweather_Sans({
   variable: "--font-merriweather-sans",
 });
 
+/* Libre Baskerville and Merriweather Sans have no Japanese glyphs, so /ja adds
+   Noto as the Japanese fallback (wired up in globals.css under :lang(ja)). */
+const notoSerifJp = Noto_Serif_JP({
+  weight: "700",
+  variable: "--font-noto-serif-jp",
+  preload: false,
+});
+
+const notoSansJp = Noto_Sans_JP({
+  variable: "--font-noto-sans-jp",
+  preload: false,
+});
+
 export default function RootShell({ lang, children }: { lang: Lang; children: React.ReactNode }) {
   return (
-    <html lang={lang} className={`${libreBaskerville.variable} ${merriweatherSans.variable}`}>
+    <html
+      lang={lang}
+      className={`${libreBaskerville.variable} ${merriweatherSans.variable}${
+        lang === "ja" ? ` ${notoSerifJp.variable} ${notoSansJp.variable}` : ""
+      }`}
+    >
       <body className="antialiased">
         <div className="flex flex-col lg:min-h-screen">
           {children}

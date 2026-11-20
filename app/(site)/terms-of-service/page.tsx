@@ -37,7 +37,8 @@ export default function TermsOfServicePage() {
               (the "App") and its services, you agree to be bound by these Terms
               of Service. If you do not agree to these Terms, you must not use
               the App. KnowUsBetter is offered in English, Turkish, Spanish,
-              Brazilian Portuguese, German, Italian, and Polish for user convenience, but the official Terms are written in
+              Brazilian Portuguese, German, Italian, Polish, French, Japanese,
+              and Dutch for user convenience, but the official Terms are written in
               English. In the event of any discrepancy between the English
               version of these Terms and a translation, the English version
               shall prevail.

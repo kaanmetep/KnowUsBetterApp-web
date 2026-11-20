@@ -40,5 +40,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/", "/tr", "/es", "/pt", "/de", "/it", "/pl"],
+  matcher: ["/", "/tr", "/es", "/pt", "/de", "/it", "/pl", "/fr", "/ja", "/nl"],
 };

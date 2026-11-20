@@ -20,6 +20,17 @@
   --font-sans: var(--font-merriweather-sans), -apple-system, sans-serif;
 }
 
+/* Japanese: the Latin fonts stay first for Latin text; Noto covers the kana and kanji. */
+html:lang(ja) {
+  --font-serif: var(--font-libre), var(--font-noto-serif-jp), "Hiragino Mincho ProN", serif;
+  --font-sans: var(--font-merriweather-sans), var(--font-noto-sans-jp), "Hiragino Sans", sans-serif;
+  word-break: auto-phrase;
+}
+html:lang(ja) .headline {
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
 /* Safari tints the status bar from the page's top edge, so the root carries
    the hero's top color; content below paints its own background. */
 html {
