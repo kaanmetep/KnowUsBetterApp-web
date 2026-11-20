@@ -1,5 +1,5 @@
 import { COPY } from "../content";
-import { APP_STORE_ID, APP_STORE_URL, LANGS, SITE_URL, langPath, type Lang } from "../i18n";
+import { APP_STORE_ID, APP_STORE_URL, LANGS, SCREEN_LANGS, SITE_URL, langPath, type Lang } from "../i18n";
 
 type Rating = { averageUserRating?: number; userRatingCount?: number };
 
@@ -55,7 +55,7 @@ export default async function StructuredData({ lang }: { lang: Lang }) {
         description: c.meta.description,
         url: pageUrl,
         image: `${SITE_URL}/images/app-icon.png`,
-        screenshot: LANGS.flatMap((l) => ["game", "vibe", "report"].map((s) => `${SITE_URL}/screens/${l}/${s}.webp`)),
+        screenshot: SCREEN_LANGS.flatMap((l) => ["game", "vibe", "report"].map((s) => `${SITE_URL}/screens/${l}/${s}.webp`)),
         operatingSystem: "iOS 15.1 or later",
         applicationCategory: "GameApplication",
         applicationSubCategory: "Couples quiz game",

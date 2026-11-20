@@ -5,6 +5,7 @@ import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import PartnerAvatar from "./PartnerAvatar";
 import type { Copy, Lang } from "../content";
+import { screenLang } from "../i18n";
 
 type Phase = "thinking" | "answered" | "picked";
 const SEQUENCE: { phase: Phase; ms: number }[] = [
@@ -40,7 +41,7 @@ export default function LivePhone({ lang, partner }: { lang: Lang; partner: Copy
           filtered layers when the pills above them animate. */}
       <div className="absolute inset-x-[0.8%] inset-y-[0.4%] rounded-[16.6%/7.7%] shadow-[0_50px_60px_-10px_rgba(74,24,38,0.22),0_16px_24px_-4px_rgba(74,24,38,0.12)]" />
       <Image
-        src={`/screens/${lang}/game.webp`}
+        src={`/screens/${screenLang(lang)}/game.webp`}
         alt=""
         width={720}
         height={1548}

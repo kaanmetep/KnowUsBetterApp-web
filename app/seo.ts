@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { COPY } from "./content";
 import { APP_STORE_ID, LANGS, SITE_URL, langPath, type Lang } from "./i18n";
 
-const OG_LOCALE: Record<Lang, string> = { en: "en_US", tr: "tr_TR", es: "es_ES", pt: "pt_BR" };
+const OG_LOCALE: Record<Lang, string> = { en: "en_US", tr: "tr_TR", es: "es_ES", pt: "pt_BR", de: "de_DE", it: "it_IT", pl: "pl_PL" };
 
 const OG_IMAGE = { url: "/images/og.png", width: 1200, height: 630, alt: "KnowUsBetter: Couple Quiz Game" };
 
@@ -100,5 +100,37 @@ const KEYWORDS: Record<Lang, string[]> = {
     "teste de casal",
     "jogos para casais à distância",
     "teste de compatibilidade",
+  ],
+  de: [
+    "KnowUsBetter",
+    "Know Us Better",
+    "Quiz für Paare",
+    "Paarquiz",
+    "Fragespiel für Paare",
+    "wie gut kennst du deinen Partner",
+    "Beziehungsquiz",
+    "Spiele für Paare",
+    "Spiele für Fernbeziehungen",
+    "Kompatibilitätstest für Paare",
+  ],
+  it: [
+    "KnowUsBetter",
+    "Know Us Better",
+    "quiz per coppie",
+    "gioco di coppia",
+    "quanto conosci il tuo partner",
+    "test di coppia",
+    "giochi per coppie a distanza",
+    "test di compatibilità di coppia",
+  ],
+  pl: [
+    "KnowUsBetter",
+    "Know Us Better",
+    "quiz dla par",
+    "gra dla par",
+    "jak dobrze znasz swojego partnera",
+    "test dla par",
+    "gry dla par na odległość",
+    "test zgodności dla par",
   ],
 };

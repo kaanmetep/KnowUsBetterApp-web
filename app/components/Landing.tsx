@@ -5,7 +5,7 @@ import LangLink from "./LangLink";
 import LivePhone from "./LivePhone";
 import StickyCta from "./StickyCta";
 import { COPY } from "../content";
-import { APP_STORE_URL, LANGS, LANG_NAME, langPath, type Lang } from "../i18n";
+import { APP_STORE_URL, LANGS, LANG_NAME, langPath, screenLang, type Lang } from "../i18n";
 
 function ScanCode({ label }: { label: string }) {
   return (
@@ -100,14 +100,14 @@ export default function Landing({ lang, tonightIndex }: { lang: Lang; tonightInd
 
           <div className="relative mx-auto flex h-[470px] w-full max-w-[420px] justify-center sm:h-[560px] sm:max-w-[500px]">
             <Image
-              src={`/screens/${lang}/vibe.webp`}
+              src={`/screens/${screenLang(lang)}/vibe.webp`}
               alt={c.alt.vibe}
               width={720}
               height={1548}
               className="phone-shadow absolute left-0 top-0 h-auto w-[56%] -rotate-[5deg]"
             />
             <Image
-              src={`/screens/${lang}/report.webp`}
+              src={`/screens/${screenLang(lang)}/report.webp`}
               alt={c.alt.report}
               width={720}
               height={1548}

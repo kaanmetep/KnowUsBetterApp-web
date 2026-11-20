@@ -104,7 +104,7 @@ export const COPY: Record<Lang, Copy> = {
         },
         {
           q: "Which languages and devices does it support?",
-          a: "KnowUsBetter is available on the App Store for iPhone and iPad, and you can play in English, Turkish (Türkçe), Spanish (Español) and Brazilian Portuguese (Português).",
+          a: "KnowUsBetter is available on the App Store for iPhone and iPad, and you can play in 7 languages: English, Turkish (Türkçe), Spanish (Español), Brazilian Portuguese (Português), German (Deutsch), Italian (Italiano) and Polish (Polski).",
         },
         {
           q: "Where can I get the official KnowUsBetter app?",
@@ -117,7 +117,7 @@ export const COPY: Record<Lang, Copy> = {
       eyebrow: "The couples quiz game",
       headline: "How well do you <em>really</em> know them?",
       sub: "One phone or two, same questions, no peeking. Then you see where you matched, and where you didn't.",
-      note: "Free on iPhone · English, Türkçe, Español, Português",
+      note: "Free on iPhone · 7 languages",
       scan: "Point your iPhone camera here",
       partner: { thinking: "Jake is thinking", answered: "Jake answered", picked: "Jake picked this too" },
     },
@@ -234,7 +234,7 @@ export const COPY: Record<Lang, Copy> = {
         },
         {
           q: "Hangi dilleri ve cihazları destekliyor?",
-          a: "KnowUsBetter, App Store'da iPhone ve iPad için mevcuttur. Türkçe, İngilizce (English), İspanyolca (Español) ve Portekizce (Português) oynayabilirsiniz.",
+          a: "KnowUsBetter, App Store'da iPhone ve iPad için mevcuttur. 7 dilde oynayabilirsiniz: Türkçe, İngilizce (English), İspanyolca (Español), Portekizce (Português), Almanca (Deutsch), İtalyanca (Italiano) ve Lehçe (Polski).",
         },
         {
           q: "Resmi KnowUsBetter uygulamasını nereden indirebilirim?",
@@ -247,7 +247,7 @@ export const COPY: Record<Lang, Copy> = {
       eyebrow: "Çiftler için quiz oyunu",
       headline: "Partnerini <em>gerçekten</em> tanıyor musun?",
       sub: "İster tek telefondan, ister farklı telefonlardan oynayın. Sonra nerede eşleştiğinizi, nerede ayrıldığınızı görün.",
-      note: "iPhone'da ücretsiz · Türkçe, English, Español, Português",
+      note: "iPhone'da ücretsiz · 7 dilde",
       scan: "iPhone kameranı buraya tut",
       partner: { thinking: "Can düşünüyor", answered: "Can cevapladı", picked: "Can de bunu seçti" },
     },
@@ -364,7 +364,7 @@ export const COPY: Record<Lang, Copy> = {
         },
         {
           q: "¿Qué idiomas y dispositivos admite?",
-          a: "KnowUsBetter está disponible en el App Store para iPhone y iPad, y se puede jugar en español, inglés (English), portugués (Português) y turco (Türkçe).",
+          a: "KnowUsBetter está disponible en el App Store para iPhone y iPad, y se puede jugar en 7 idiomas: español, inglés (English), portugués (Português), turco (Türkçe), alemán (Deutsch), italiano (Italiano) y polaco (Polski).",
         },
         {
           q: "¿Dónde descargo la app oficial de KnowUsBetter?",
@@ -377,7 +377,7 @@ export const COPY: Record<Lang, Copy> = {
       eyebrow: "El quiz para parejas",
       headline: "¿De verdad <em>conoces</em> a tu pareja?",
       sub: "Un teléfono o dos, las mismas preguntas, sin espiar. Después ven en qué coincidieron y en qué no.",
-      note: "Gratis en iPhone · Español, English, Português, Türkçe",
+      note: "Gratis en iPhone · En 7 idiomas",
       scan: "Apunta aquí con la cámara de tu iPhone",
       partner: { thinking: "Mateo está pensando", answered: "Mateo respondió", picked: "Mateo también eligió esto" },
     },
@@ -494,7 +494,7 @@ export const COPY: Record<Lang, Copy> = {
         },
         {
           q: "Quais idiomas e aparelhos são compatíveis?",
-          a: "O KnowUsBetter está na App Store para iPhone e iPad, e dá para jogar em português, inglês (English), espanhol (Español) e turco (Türkçe).",
+          a: "O KnowUsBetter está na App Store para iPhone e iPad, e dá para jogar em 7 idiomas: português, inglês (English), espanhol (Español), turco (Türkçe), alemão (Deutsch), italiano (Italiano) e polonês (Polski).",
         },
         {
           q: "Onde baixo o app oficial do KnowUsBetter?",
@@ -507,7 +507,7 @@ export const COPY: Record<Lang, Copy> = {
       eyebrow: "O quiz para casais",
       headline: "Você <em>conhece</em> mesmo o seu amor?",
       sub: "Um celular ou dois, as mesmas perguntas, sem espiar. Depois vocês veem onde combinaram e onde não.",
-      note: "Grátis no iPhone · Português, English, Español, Türkçe",
+      note: "Grátis no iPhone · Em 7 idiomas",
       scan: "Aponte a câmera do seu iPhone aqui",
       partner: { thinking: "Lucas está pensando", answered: "Lucas respondeu", picked: "Lucas também escolheu isso" },
     },
@@ -570,5 +570,395 @@ export const COPY: Record<Lang, Copy> = {
     get: "Obter",
     free: "Grátis",
     badge: ["Baixar na", "App Store"],
+  },
+
+  de: {
+    meta: {
+      title: "KnowUsBetter: Quiz für Paare | Wie gut kennst du deinen Schatz?",
+      description:
+        "Kostenloses Quiz für Paare auf dem iPhone. Spielt abwechselnd auf einem Handy oder live auf zwei, seht eure Übereinstimmung und holt euch eine Beziehungsanalyse mit KI. Ohne Anmeldung.",
+      ogTitle: "KnowUsBetter: Wie gut kennst du deinen Schatz wirklich?",
+      ogDescription: "Das Quiz für Paare. Abwechselnd auf einem Handy oder live auf zwei, dann seht ihr, wo ihr übereinstimmt. Kostenlos fürs iPhone.",
+    },
+    alt: {
+      icon: "App-Symbol von KnowUsBetter",
+      vibe: "KnowUsBetter-Bildschirm zur Auswahl einer Fragenkategorie für Paare",
+      report: "KI-Beziehungsanalyse von KnowUsBetter mit der Übereinstimmung eines Paares",
+      couple: "Illustration eines Paares, das zusammen das KnowUsBetter-Quiz spielt",
+    },
+    faq: {
+      eyebrow: "Fragen",
+      title: "Alles über KnowUsBetter",
+      items: [
+        {
+          q: "Was ist KnowUsBetter?",
+          a: "KnowUsBetter (auch „Know Us Better“ geschrieben) ist ein kostenloses Quiz für Paare auf dem iPhone. Du und dein Schatz beantwortet dieselben Fragen, abwechselnd auf einem Handy oder gleichzeitig jeweils am eigenen Handy. Danach seht ihr, wo ihr übereinstimmt, bekommt euren Übereinstimmungswert und auf Wunsch eine Beziehungsanalyse mit KI.",
+        },
+        {
+          q: "Wie spielt man KnowUsBetter?",
+          a: "Erstellt einen Raum und wählt eine Kategorie. Sitzt ihr zusammen? Wählt „Ein Handy“, gebt den Namen deines Schatzes ein und antwortet abwechselnd: Die Antworten bleiben bis zur Auflösung verdeckt. Seid ihr nicht am selben Ort? Wählt „Zwei Handys“ und teilt den Raumcode, dann antwortet ihr gleichzeitig und seht eure Übereinstimmungen live. Ein Spiel dauert etwa fünf Minuten.",
+        },
+        {
+          q: "Müssen wir beide die App herunterladen?",
+          a: "Nein. Wenn ihr zusammen seid, reicht ein Handy, und dein Schatz muss nichts herunterladen: Ihr antwortet abwechselnd auf demselben Handy und seht die Ergebnisse gemeinsam. Um auf zwei Handys zu spielen, braucht ihr beide die App.",
+        },
+        {
+          q: "Welche Spielmodi gibt es?",
+          a: "Es gibt über 10 Arten zu spielen. Beantwortet dieselben Fragen und seht, wie oft ihr gleich tickt, mit Kategorien von frisch kennengelernt bis lange zusammen, tiefgründigen Gesprächen und Intimität. „Wie gut kennst du mich?“: Errate die Antworten deines Schatzes. „Wer weiß mehr?“: Tretet im Quiz direkt gegeneinander an. Dazu „Wer würde eher?“, „Rangliste“ und „Zwei Wahrheiten, eine Lüge“.",
+        },
+        {
+          q: "Ist KnowUsBetter kostenlos?",
+          a: "Ja. KnowUsBetter kannst du kostenlos laden, ganz ohne Konto oder Anmeldung. Alle 4 Stunden gibt es Gratis-Münzen, und optionale Münzpakete sind Einmalkäufe.",
+        },
+        {
+          q: "Können Paare in einer Fernbeziehung spielen?",
+          a: "Ja. Wählt „Zwei Handys“ und spielt jeweils am eigenen Handy, ob auf derselben Couch oder in verschiedenen Ländern. Bei Paaren in Fernbeziehungen ist es ein beliebtes Spiel für den gemeinsamen Date-Abend.",
+        },
+        {
+          q: "Was ist die Beziehungsanalyse mit KI?",
+          a: "Nach einem Spiel könnt ihr eine persönliche Analyse auf Basis eurer Antworten freischalten. Sie zeigt eure Stärken als Paar, wo ihr verschieden tickt und was ihr übereinander noch nicht wisst.",
+        },
+        {
+          q: "Für wen ist KnowUsBetter?",
+          a: "Für Paare, die sich gerade kennenlernen, Paare, die schon Jahre zusammen sind, Verheiratete, Fernbeziehungen und beste Freunde. Die Kategorien reichen von locker und lustig bis tiefgründig und bedeutungsvoll.",
+        },
+        {
+          q: "Welche Sprachen und Geräte werden unterstützt?",
+          a: "KnowUsBetter gibt es im App Store für iPhone und iPad, und ihr könnt in 7 Sprachen spielen: Deutsch, Englisch (English), Türkisch (Türkçe), Spanisch (Español), brasilianisches Portugiesisch (Português), Italienisch (Italiano) und Polnisch (Polski).",
+        },
+        {
+          q: "Wo bekomme ich die offizielle KnowUsBetter-App?",
+          a: "Die offizielle App ist „KnowUsBetter: Couple Quiz Game“ von Kaan Peksen im App Store (ID 6754946265), die offizielle Website ist knowusbetter.app. Andere Apps mit ähnlichen Namen haben nichts mit KnowUsBetter zu tun.",
+        },
+      ],
+    },
+    navCta: "App laden",
+    hero: {
+      eyebrow: "Das Quiz für Paare",
+      headline: "Wie gut <em>kennst</em> du deinen Schatz wirklich?",
+      sub: "Ein Handy oder zwei, dieselben Fragen, kein Spicken. Danach seht ihr, wo ihr übereinstimmt und wo nicht.",
+      note: "Kostenlos fürs iPhone · In 7 Sprachen",
+      scan: "Halte die Kamera deines iPhones hierher",
+      partner: { thinking: "Jonas denkt nach", answered: "Jonas hat geantwortet", picked: "Jonas hat das auch gewählt" },
+    },
+    guess: {
+      eyebrow: "Probier’s direkt aus",
+      title: "Antworte für deinen Schatz.",
+      sub: "Drei Fragen. Wähl, was dein Schatz wählen würde.",
+      counter: "Frage {n} von {total}",
+      questions: [
+        {
+          text: "Nach einem Streit will dein Schatz meistens …",
+          options: ["Erst mal Abstand", "Sofort darüber reden", "So tun, als wäre nichts", "Sich mit Essen versöhnen"],
+        },
+        {
+          text: "Wie beginnt der perfekte Sonntag deines Schatzes?",
+          options: ["Ausschlafen, ohne Wecker", "Brunch in einem neuen Café", "Langer Spaziergang draußen", "Ehrlich gesagt: To-do-Liste"],
+        },
+        {
+          text: "Wodurch fühlt sich dein Schatz am meisten geliebt?",
+          options: ["Es laut gesagt bekommen", "Deine volle Aufmerksamkeit", "Eine kleine Überraschung", "Eine lange Umarmung"],
+        },
+      ],
+      doneEyebrow: "3 Tipps abgegeben",
+      doneTitle: "Und errät dein Schatz <em>deine</em> Antworten?",
+      doneBody:
+        "Das erfährst du hier nicht. In der App antwortet ihr beide, auf einem Handy oder auf zwei, und die Ergebnisse landen direkt nebeneinander.",
+      play: "In der App herausfinden",
+      send: "Quiz an deinen Schatz schicken",
+      copied: "Link kopiert",
+      restart: "Neu starten",
+      shareText: "Ich hab gerade 3 Dinge über dich erraten. Wetten, du errätst meine nicht?",
+    },
+    how: {
+      eyebrow: "So wird gespielt",
+      title: "Fünf Minuten zum Spielen. Stunden zum Reden.",
+      steps: [
+        { title: "Wählt eure Stimmung", body: "Frisch kennengelernt, schon Jahre zusammen oder einfach Freundschaft. Die Fragen passen zu euch." },
+        { title: "Antworten ohne Spicken", body: "Abwechselnd auf einem Handy oder gleichzeitig auf zwei. Die Antworten bleiben bis zur Auflösung verdeckt." },
+        { title: "Seht, wie ihr zusammenpasst", body: "Eure Antworten nebeneinander, dazu eine KI-Analyse, was sie über euch zwei verraten." },
+      ],
+    },
+    tonight: {
+      eyebrow: "Frag heute Abend mal",
+      questions: [
+        "Welche Kleinigkeit an mir liebst du heimlich?",
+        "Wann wusstest du, dass das mit uns etwas Echtes ist?",
+        "An welchen gemeinsamen Moment denkst du am häufigsten zurück?",
+        "Was hast du bei unserem ersten Treffen von mir gedacht?",
+        "Welche Angewohnheit von mir hast du übernommen?",
+        "Wann fühlst du dich mir am nächsten?",
+        "Welcher Song erinnert dich an uns?",
+        "Was willst du dieses Jahr mit mir ausprobieren?",
+        "Womit könnte ich dir diese Woche den Tag versüßen?",
+        "Ganz ehrlich: Wo siehst du uns in fünf Jahren?",
+        "Was hast du mir nie erzählt, weil es dir zu klein vorkam?",
+        "Wie sähe dein perfekter Tag mit mir aus?",
+      ],
+      after: "Die nächsten zehn stellt dann die App.",
+    },
+    get: "Laden",
+    free: "Kostenlos",
+    badge: ["Laden im", "App Store"],
+  },
+
+  it: {
+    meta: {
+      title: "KnowUsBetter: Quiz per Coppie | Quanto Conosci il Tuo Amore?",
+      description:
+        "Quiz per coppie gratis su iPhone. Giocate a turno su un telefono o in diretta su due, scoprite dove siete in sintonia e ricevete un punteggio di sintonia e un'analisi della relazione fatta con l'IA. Senza registrazione.",
+      ogTitle: "KnowUsBetter: Conosci davvero il tuo amore?",
+      ogDescription: "Il quiz per coppie. A turno su un telefono o in diretta su due, poi scoprite dove siete in sintonia. Gratis su iPhone.",
+    },
+    alt: {
+      icon: "Icona dell'app KnowUsBetter",
+      vibe: "Schermata di KnowUsBetter per scegliere una categoria di domande per coppie",
+      report: "Analisi della relazione con l'IA di KnowUsBetter con la sintonia di una coppia",
+      couple: "Illustrazione di una coppia che gioca insieme al quiz di KnowUsBetter",
+    },
+    faq: {
+      eyebrow: "Domande",
+      title: "Tutto su KnowUsBetter",
+      items: [
+        {
+          q: "Che cos'è KnowUsBetter?",
+          a: "KnowUsBetter (scritto anche «Know Us Better») è un quiz gratuito per coppie su iPhone. Tu e il tuo amore rispondete alle stesse domande, a turno su un telefono oppure in contemporanea da due telefoni. Poi scoprite dove siete in sintonia, ricevete un punteggio di sintonia e, se volete, un'analisi della relazione fatta con l'IA.",
+        },
+        {
+          q: "Come si gioca a KnowUsBetter?",
+          a: "Create una stanza e scegliete una categoria. Siete insieme? Scegliete «Un telefono», aggiungete il nome del tuo amore e rispondete a turno: le risposte restano nascoste fino alla fine. Vi trovate in posti diversi? Scegliete «Telefoni separati» e condividete il codice della stanza: rispondete in contemporanea e vedete in diretta dove coincidete. Una partita dura circa cinque minuti.",
+        },
+        {
+          q: "Serve scaricare l'app su due telefoni?",
+          a: "No. Se siete insieme basta un telefono, e il tuo amore non deve scaricare nulla: rispondete a turno sullo stesso telefono e vedete i risultati insieme. Per giocare da due telefoni, l'app serve su ciascun telefono.",
+        },
+        {
+          q: "Quali modalità di gioco ci sono?",
+          a: "Ci sono più di 10 modi di giocare. Rispondete alle stesse domande e scoprite quanto la pensate allo stesso modo, con categorie per chi si conosce da poco, per chi sta insieme da tanto, per i discorsi profondi e l'intimità. «Quanto mi conosci?»: indovina le risposte del tuo amore. «Chi ne sa di più?»: sfidatevi faccia a faccia in un quiz. E poi «Chi è più probabile che…?», «Metti in ordine» e «Due verità e una bugia».",
+        },
+        {
+          q: "KnowUsBetter è gratis?",
+          a: "Sì. KnowUsBetter si scarica gratis e non richiede account né login. Ricevi monete gratis ogni 4 ore, e i pacchetti di monete facoltativi sono acquisti una tantum.",
+        },
+        {
+          q: "Possono giocare le coppie a distanza?",
+          a: "Sì. Scegliete «Telefoni separati» e giocate da due telefoni, sullo stesso divano o da due paesi diversi. È un gioco molto amato per la serata di coppia nelle relazioni a distanza.",
+        },
+        {
+          q: "Che cos'è l'analisi della relazione con l'IA?",
+          a: "Dopo una partita potete sbloccare un report personalizzato basato sulle vostre risposte. Mostra i vostri punti di forza come coppia, dove la pensate in modo diverso e cosa vi sfugge ancora dell'altra persona.",
+        },
+        {
+          q: "Per chi è KnowUsBetter?",
+          a: "Per le coppie che si stanno conoscendo, quelle insieme da anni, le coppie sposate, quelle a distanza e i migliori amici. Le categorie vanno dal leggero e divertente al profondo e significativo.",
+        },
+        {
+          q: "Quali lingue e dispositivi supporta?",
+          a: "KnowUsBetter è disponibile sull'App Store per iPhone e iPad, e si può giocare in 7 lingue: italiano, inglese (English), turco (Türkçe), spagnolo (Español), portoghese brasiliano (Português), tedesco (Deutsch) e polacco (Polski).",
+        },
+        {
+          q: "Dove scarico l'app ufficiale di KnowUsBetter?",
+          a: "L'app ufficiale è «KnowUsBetter: Couple Quiz Game» di Kaan Peksen sull'App Store (ID 6754946265), e il sito ufficiale è knowusbetter.app. Altre app con nomi simili non hanno legami con KnowUsBetter.",
+        },
+      ],
+    },
+    navCta: "Scarica l'app",
+    hero: {
+      eyebrow: "Il quiz per coppie",
+      headline: "Conosci <em>davvero</em> il tuo amore?",
+      sub: "Un telefono o due, le stesse domande, niente sbirciate. Poi scoprite dove coincidete e dove no.",
+      note: "Gratis su iPhone · In 7 lingue",
+      scan: "Inquadra qui con la fotocamera dell'iPhone",
+      partner: { thinking: "Luca ci sta pensando", answered: "Luca ha risposto", picked: "Anche Luca ha scelto questa" },
+    },
+    guess: {
+      eyebrow: "Provalo subito",
+      title: "Rispondi al posto del tuo amore.",
+      sub: "Tre domande. Scegli quello che sceglierebbe il tuo amore.",
+      counter: "Domanda {n} di {total}",
+      questions: [
+        {
+          text: "Dopo una discussione, di solito il tuo amore…",
+          options: ["Ha bisogno di spazio", "Vuole parlarne subito", "Fa finta di niente", "Fa pace col cibo"],
+        },
+        {
+          text: "La domenica perfetta del tuo amore inizia con…",
+          options: ["Una dormita senza sveglia", "Un brunch in un posto nuovo", "Una lunga passeggiata all'aperto", "Una lista di cose da fare, giuro"],
+        },
+        {
+          text: "Cosa scalda di più il cuore del tuo amore?",
+          options: ["Sentirselo dire", "Tutta la tua attenzione", "Una piccola sorpresa", "Un abbraccio lungo"],
+        },
+      ],
+      doneEyebrow: "3 ipotesi registrate",
+      doneTitle: "E il tuo amore indovinerebbe le <em>tue</em>?",
+      doneBody:
+        "Da qui non puoi saperlo. Nell'app rispondete in due, su un telefono o su due, e i risultati compaiono uno accanto all'altro.",
+      play: "Scoprilo nell'app",
+      send: "Manda il quiz al tuo amore",
+      copied: "Link copiato",
+      restart: "Ricomincia",
+      shareText: "Ho appena indovinato 3 cose su di te. Scommetto che tu non indovini le mie.",
+    },
+    how: {
+      eyebrow: "Come si gioca",
+      title: "Cinque minuti per giocare. Ore per parlarne.",
+      steps: [
+        { title: "Scegliete il mood", body: "Da poco, da anni o solo amicizia. Le domande si adattano a voi." },
+        { title: "Niente sbirciate", body: "A turno su un telefono o in contemporanea su due. Le risposte restano nascoste fino alla fine." },
+        { title: "Scoprite la sintonia", body: "Le vostre risposte una accanto all'altra, più un report dell'IA su cosa dicono di voi due." },
+      ],
+    },
+    tonight: {
+      eyebrow: "Stasera, chiedi al tuo amore",
+      questions: [
+        "Qual è una piccola cosa che faccio e che ami in segreto?",
+        "Quando hai capito che tra noi era una cosa seria?",
+        "A quale nostro ricordo ripensi più spesso?",
+        "Cosa hai pensato di me al nostro primo incontro?",
+        "Quale mia abitudine hai preso anche tu?",
+        "In quali momenti ti senti più in sintonia con me?",
+        "Quale canzone ti fa pensare a noi?",
+        "Cosa ti piacerebbe provare insieme quest'anno?",
+        "Cosa potrei fare questa settimana per renderti la giornata più bella?",
+        "Sinceramente, dove ci vedi tra cinque anni?",
+        "Cosa non mi hai mai detto perché ti sembrava una sciocchezza?",
+        "Come sarebbe la tua giornata perfetta con me?",
+      ],
+      after: "Poi lascia che le prossime dieci le faccia l'app.",
+    },
+    get: "Ottieni",
+    free: "Gratis",
+    badge: ["Scarica su", "App Store"],
+  },
+
+  pl: {
+    meta: {
+      title: "KnowUsBetter: quiz dla par | Jak dobrze znasz swoją drugą połówkę?",
+      description:
+        "Darmowy quiz dla par na iPhone’a. Grajcie na zmianę na jednym telefonie albo na żywo na dwóch, sprawdźcie, w czym się zgadzacie, i odbierzcie wynik zgodności oraz raport o waszym związku przygotowany przez AI. Bez rejestracji.",
+      ogTitle: "KnowUsBetter: Czy naprawdę znasz swoją drugą połówkę?",
+      ogDescription: "Quiz dla par. Na zmianę na jednym telefonie albo na żywo na dwóch, a potem sprawdźcie, w czym się zgadzacie. Za darmo na iPhone’a.",
+    },
+    alt: {
+      icon: "Ikona aplikacji KnowUsBetter",
+      vibe: "Ekran KnowUsBetter z wyborem kategorii pytań dla par",
+      report: "Raport AI o związku w KnowUsBetter z wynikiem zgodności pary",
+      couple: "Ilustracja pary, która razem gra w quiz KnowUsBetter",
+    },
+    faq: {
+      eyebrow: "Pytania",
+      title: "Wszystko o KnowUsBetter",
+      items: [
+        {
+          q: "Czym jest KnowUsBetter?",
+          a: "KnowUsBetter (pisane też „Know Us Better”) to darmowy quiz dla par na iPhone’a. Ty i twoja druga połówka odpowiadacie na te same pytania – na zmianę na jednym telefonie albo jednocześnie na dwóch. Potem widzicie, w czym się zgadzacie, dostajecie wynik zgodności i, jeśli chcecie, raport o waszym związku przygotowany przez AI.",
+        },
+        {
+          q: "Jak się gra w KnowUsBetter?",
+          a: "Utwórzcie pokój i wybierzcie kategorię. Siedzicie obok siebie? Wybierzcie „Jeden telefon”, wpiszcie imię drugiej osoby i odpowiadajcie na zmianę: odpowiedzi pozostają ukryte aż do odsłonięcia. Jesteście daleko od siebie? Wybierzcie „Osobne telefony” i wyślijcie kod pokoju – odpowiadacie jednocześnie i widzicie zgodności na żywo. Jedna gra trwa około pięciu minut.",
+        },
+        {
+          q: "Czy aplikacja musi być na dwóch telefonach?",
+          a: "Nie. Jeśli jesteście razem, wystarczy jeden telefon, a twoja druga połówka nie musi niczego pobierać: odpowiadacie na zmianę na tym samym telefonie i razem oglądacie wyniki. Żeby grać na dwóch telefonach, aplikacja musi być na każdym z nich.",
+        },
+        {
+          q: "Jakie są tryby gry?",
+          a: "Jest ponad 10 sposobów na grę. Odpowiadajcie na te same pytania i sprawdźcie, jak często myślicie podobnie – są kategorie dla par, które dopiero się poznają, par z długim stażem, na głębokie rozmowy i o intymności. „Jak dobrze mnie znasz?”: zgadnij odpowiedzi swojej drugiej połówki. „Kto wie więcej?”: zmierzcie się w quizie łeb w łeb. A do tego „Kto z was prędzej?”, „Ułóż ranking” i „Dwie prawdy, jedno kłamstwo”.",
+        },
+        {
+          q: "Czy KnowUsBetter jest za darmo?",
+          a: "Tak. KnowUsBetter można pobrać za darmo i nie trzeba zakładać konta ani się logować. Co 4 godziny dostajesz darmowe monety, a opcjonalne pakiety monet to jednorazowe zakupy.",
+        },
+        {
+          q: "Czy mogą grać pary w związku na odległość?",
+          a: "Tak. Wybierzcie „Osobne telefony” i grajcie, każda osoba na swoim telefonie – z tej samej kanapy albo z różnych krajów. To popularna gra na randkę w związku na odległość.",
+        },
+        {
+          q: "Czym jest raport AI o związku?",
+          a: "Po grze możecie odblokować spersonalizowany raport oparty na waszych odpowiedziach. Pokazuje wasze mocne strony jako pary, różnice między wami i to, czego wciąż o sobie nie wiecie.",
+        },
+        {
+          q: "Dla kogo jest KnowUsBetter?",
+          a: "Dla par, które dopiero się poznają, par z wieloletnim stażem, małżeństw, związków na odległość i najlepszych przyjaciół. Kategorie sięgają od lekkich i zabawnych po głębokie i poważne.",
+        },
+        {
+          q: "Jakie języki i urządzenia są obsługiwane?",
+          a: "Aplikacja KnowUsBetter jest dostępna w App Store na iPhone’a i iPada, a grać można w 7 językach: polskim, angielskim (English), tureckim (Türkçe), hiszpańskim (Español), portugalskim w wersji brazylijskiej (Português), niemieckim (Deutsch) i włoskim (Italiano).",
+        },
+        {
+          q: "Skąd pobrać oficjalną aplikację KnowUsBetter?",
+          a: "Oficjalna aplikacja to „KnowUsBetter: Couple Quiz Game” w App Store (twórca: Kaan Peksen, ID 6754946265), a oficjalna strona to knowusbetter.app. Inne aplikacje o podobnych nazwach nie są powiązane z KnowUsBetter.",
+        },
+      ],
+    },
+    navCta: "Pobierz aplikację",
+    hero: {
+      eyebrow: "Quiz dla par",
+      headline: "Czy naprawdę <em>znasz</em> swoją drugą połówkę?",
+      sub: "Jeden telefon albo dwa, te same pytania, bez podglądania. Potem widzicie, w czym się zgadzacie, a w czym nie.",
+      note: "Za darmo na iPhone’a · W 7 językach",
+      scan: "Skieruj tu aparat iPhone’a",
+      partner: { thinking: "Kuba się zastanawia", answered: "Kuba odpowiedział", picked: "Kuba też to wybrał" },
+    },
+    guess: {
+      eyebrow: "Sprawdź od razu",
+      title: "Odpowiedz za swoją drugą połówkę.",
+      sub: "Trzy pytania. Wybierz to, co wybrałaby twoja druga połówka.",
+      counter: "Pytanie {n} z {total}",
+      questions: [
+        {
+          text: "Po kłótni twoja druga połówka zwykle…",
+          options: ["Potrzebuje chwili dla siebie", "Chce od razu pogadać", "Udaje, że nic się nie stało", "Godzi się przy jedzeniu"],
+        },
+        {
+          text: "Idealna niedziela twojej drugiej połówki zaczyna się od…",
+          options: ["Spania bez budzika", "Brunchu w nowym miejscu", "Długiego spaceru", "Listy zadań, serio"],
+        },
+        {
+          text: "Co sprawia, że twoja druga połówka czuje się najbardziej kochana?",
+          options: ["Słowa powiedziane na głos", "Twoja pełna uwaga", "Mała niespodzianka", "Długie przytulanie"],
+        },
+      ],
+      doneEyebrow: "3 typy zapisane",
+      doneTitle: "A czy twoja druga połówka zgadnie <em>twoje</em>?",
+      doneBody:
+        "Tutaj się tego nie dowiesz. W aplikacji odpowiadacie razem – na jednym telefonie albo na dwóch – a wyniki pojawiają się obok siebie.",
+      play: "Sprawdź w aplikacji",
+      send: "Wyślij ten quiz drugiej połówce",
+      copied: "Link skopiowany",
+      restart: "Zacznij od nowa",
+      shareText: "Mam 3 typy na twój temat. Ciekawe, czy ty zgadniesz moje.",
+    },
+    how: {
+      eyebrow: "Jak się gra",
+      title: "Pięć minut gry. Godziny rozmów.",
+      steps: [
+        { title: "Wybierzcie klimat", body: "Dopiero się poznajecie, jesteście razem od lat albo to po prostu przyjaźń. Pytania pasują do was." },
+        { title: "Bez podglądania", body: "Na zmianę na jednym telefonie albo jednocześnie na dwóch. Odpowiedzi są ukryte aż do odsłonięcia." },
+        { title: "Sprawdźcie zgodność", body: "Wasze odpowiedzi obok siebie, a do tego raport AI o tym, co mówią o was." },
+      ],
+    },
+    tonight: {
+      eyebrow: "Dziś wieczorem zapytaj",
+      questions: [
+        "Który mój drobny gest po cichu uwielbiasz?",
+        "Od kiedy wiesz, że to między nami jest na serio?",
+        "Które nasze wspomnienie najczęściej wraca ci w myślach?",
+        "Jakie było twoje pierwsze wrażenie na mój temat?",
+        "Jaki mój nawyk ci się udzielił?",
+        "Kiedy czujesz się mi najbliżej?",
+        "Jaka piosenka kojarzy ci się z nami?",
+        "Co chcesz razem wypróbować w tym roku?",
+        "Co mogę zrobić w tym tygodniu, żeby poprawić ci dzień?",
+        "Szczerze: gdzie widzisz nas za pięć lat?",
+        "Jest coś, o czym mi nie mówisz, bo wydaje ci się zbyt błahe?",
+        "Jak wyglądałby twój idealny dzień ze mną?",
+      ],
+      after: "A kolejne dziesięć niech zada aplikacja.",
+    },
+    get: "Pobierz",
+    free: "Za darmo",
+    badge: ["Pobierz z", "App Store"],
   },
 };
