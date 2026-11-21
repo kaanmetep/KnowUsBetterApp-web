@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: November 17, 2026
+            Last updated: November 20, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -33,12 +33,14 @@ export default function PrivacyPolicyPage() {
               This quiz game app is offered on both iOS and Android. We respect
               your privacy and collect only the data needed for core
               functionality. No login or personal account is required – the game
-              identifies players only by a random ID. We do not collect emails,
-              phone numbers, addresses, contacts, precise location data,
-              photos, or microphone access. The data we handle is: a unique anonymous
+              identifies players only by a random ID. We do not collect phone
+              numbers, addresses, contacts, precise location data, photos, or
+              microphone access, and we only receive an email address if you
+              choose to give one when you write to us. The data we handle is: a unique anonymous
               device identifier, the display name and avatar you choose, your
               answers during a game (including short typed answers), reports
-              you send about other players, in-app purchase records (handled
+              you send about other players, feedback and support messages you
+              send us from the app, in-app purchase records (handled
               through RevenueCat), an optional push notification token, and
               analytics, crash and error data and occasional screen
               recordings used to improve the app.
@@ -103,6 +105,24 @@ export default function PrivacyPolicyPage() {
                   report for manual review: the reported answer, the question,
                   the room code, both players' display names, and both
                   players' anonymous IDs.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  Feedback, Support Messages and Deletion Requests
+                </h3>
+                <p>
+                  You can send us feedback, a support message, or a data
+                  deletion request from inside the app (Settings). We store
+                  what you write, your anonymous ID, the app version, your
+                  device platform and OS version, and the app language, so we
+                  can read and act on it. Giving an email address is optional;
+                  if you do, we use it only to reply to you or to confirm a
+                  deletion. We do not use it for marketing and do not share it
+                  with anyone. Messages are kept until we have handled them and
+                  for as long as they are useful for improving the app; you can
+                  ask us to delete them at any time.
                 </p>
               </div>
 
@@ -381,14 +401,24 @@ export default function PrivacyPolicyPage() {
               function (e.g., to remember your coins). Analytics and crash data
               are kept only as long as they are useful for improving the app.
               We do not keep your data longer than needed.
-              While the app does not include an in-app "Delete Account" button,
-              we comply with privacy guidelines for data deletion. As Apple's
-              guidelines state, even "guest" or automatically-generated accounts
-              must be deletable. Therefore, you may request deletion of your
-              data at any time. If you want us to erase your information (device
-              ID, purchase records and the analytics data linked to your
-              device ID), please contact our support (see below).
-              We will promptly delete your data from our systems upon request.
+            </p>
+
+            <p className="mb-6 text-red-900 dark:text-red-300">
+              You can ask us to delete your data at any time, right from the
+              app: open Settings and tap "Request Data Deletion". You can also
+              email us (see below) with the User ID shown in Settings. We
+              delete the data linked to your anonymous ID within 30 days: your
+              coins and coin history, Unlimited status, the questions you have
+              already seen, your daily analyses, your push notification token,
+              your feedback and support messages, and the analytics data
+              linked to your ID. Reports you filed are kept for moderation
+              without your ID or name. We keep only what we are required to
+              keep: purchase transaction records needed for tax and
+              accounting, and blocked IDs for as long as a block applies.
+              Deleting your data does not cancel a subscription; you can cancel
+              it in your App Store or Google Play settings. If you left an
+              email address with your request, we will let you know once the
+              deletion is complete.
             </p>
 
             {/* Children's Privacy */}
@@ -424,7 +454,8 @@ export default function PrivacyPolicyPage() {
 
             <p className="mb-6 text-red-900 dark:text-red-300">
               If you have any questions, concerns, or requests (including data
-              deletion), please contact our support team at{" "}
+              deletion), write to us from the app (Settings → Contact Us) or
+              email our support team at{" "}
               <a
                 href="mailto:help@knowusbetter.app"
                 className="font-semibold underline hover:text-red-950 dark:hover:text-red-100"
