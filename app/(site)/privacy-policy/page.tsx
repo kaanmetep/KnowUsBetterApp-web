@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: November 20, 2026
+            Last updated: November 22, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -227,13 +227,15 @@ export default function PrivacyPolicyPage() {
 
               <div>
                 <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
-                  AI Match Analysis (Optional)
+                  Daily Analysis and AI Match Analysis (Optional)
                 </h3>
                 <p>
-                  If you choose to unlock an AI Match Analysis after a game, the
-                  display names and answers from that game (including typed
-                  answers) are sent to OpenAI to generate a personalized report.
-                  The app asks for your agreement before anything is sent.
+                  If you play a Daily Analysis or unlock an AI Match Analysis,
+                  the display names and answers from that game (including typed
+                  answers) are sent to an AI provider to generate a
+                  personalized report: Anthropic (Claude), or OpenAI as a backup
+                  and for players on older app versions. The app asks every
+                  player for their agreement before anything is sent.
                 </p>
               </div>
 
@@ -324,9 +326,9 @@ export default function PrivacyPolicyPage() {
                 <p>
                   We send typed answers to OpenAI to (1) check them for harmful
                   content, and (2) decide whether two players' typed answers
-                  match. If you unlock an AI Match Analysis, the names and
-                  answers from that game are also sent to OpenAI to write your
-                  report. OpenAI processes this data on our behalf. Under its
+                  match. Reports for a Daily Analysis or an AI Match Analysis
+                  may also be written by OpenAI, as described above. OpenAI
+                  processes this data on our behalf. Under its
                   API terms, OpenAI does not use it to train its models and may
                   keep it for up to 30 days for abuse monitoring. You can learn
                   more at{" "}
@@ -337,6 +339,28 @@ export default function PrivacyPolicyPage() {
                     className="underline hover:text-red-950 dark:hover:text-red-100"
                   >
                     OpenAI Privacy Policy
+                  </a>
+                  .
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-semibold text-red-950 dark:text-red-200">
+                  Anthropic (AI Reports)
+                </h3>
+                <p>
+                  If you and your partner agree, the names and answers from a
+                  Daily Analysis game are sent to Anthropic, whose Claude models
+                  write your report. Anthropic processes this data on our behalf
+                  and, under its commercial terms, does not use it to train its
+                  models. You can learn more at{" "}
+                  <a
+                    href="https://www.anthropic.com/legal/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-red-950 dark:hover:text-red-100"
+                  >
+                    Anthropic Privacy Policy
                   </a>
                   .
                 </p>

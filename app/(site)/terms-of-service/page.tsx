@@ -24,7 +24,7 @@ export default function TermsOfServicePage() {
             Terms of Service / Terms of Use
           </h1>
           <p className="mb-8 text-sm text-red-800 dark:text-red-400">
-            Last updated: November 17, 2026
+            Last updated: November 22, 2026
           </p>
 
           <div className="prose prose-red max-w-none dark:prose-invert">
@@ -351,8 +351,9 @@ export default function TermsOfServicePage() {
               choose and your answers, including short typed answers, which
               are shown only to the other player in your room. Typed answers
               are checked for harmful content and matched using OpenAI. If you
-              choose the AI Match Analysis, the names and answers from that
-              game are sent to OpenAI to generate your report. We also collect
+              play a Daily Analysis or choose the AI Match Analysis, the names
+              and answers from that game are sent to Anthropic (Claude) or, as
+              a backup, OpenAI to generate your report. We also collect
               limited analytics and crash data through PostHog. By
               using the App, you consent to the data practices described in our
               Privacy Policy. If you have privacy concerns or wish to learn
