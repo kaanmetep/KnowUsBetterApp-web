@@ -1,4 +1,4 @@
-import { APP_STORE_ID, pickLang, type Lang } from "../i18n";
+import { APP_STORE_ID, type Lang } from "../i18n";
 
 /* Shared bits of the social bio-link page (/tt). TikTok and Instagram open bio
    links in their own webview, where apps.apple.com links often go nowhere and
@@ -6,14 +6,14 @@ import { APP_STORE_ID, pickLang, type Lang } from "../i18n";
 
 export type Platform = "ios" | "android" | "desktop";
 
-export function detect(ua: string, acceptLanguage: string | null) {
+export function detect(ua: string) {
   const platform: Platform = /iPhone|iPad|iPod/i.test(ua) ? "ios" : /Android/i.test(ua) ? "android" : "desktop";
   const inApp = /musical_ly|Bytedance|TikTok|trill_/i.test(ua)
     ? "tiktok"
     : /Instagram|FBAN|FBAV|FB_IAB/i.test(ua)
       ? "instagram"
       : null;
-  return { platform, inApp, lang: pickLang(acceptLanguage) as Lang };
+  return { platform, inApp };
 }
 
 /* Apple counts installs per campaign token (App Store Connect → Analytics →

@@ -6,6 +6,7 @@ import { COPY } from "../../content";
 import { screenLang } from "../../i18n";
 import { siteMetadata } from "../../seo";
 import { appStoreLink, cleanSource, detect, WORDS } from "../go";
+import { goLang } from "../lang";
 import Track from "./Track";
 
 export const metadata: Metadata = {
@@ -18,14 +19,15 @@ export const metadata: Metadata = {
 
 export default async function BioLinkPage({ searchParams }: { searchParams: Promise<Record<string, string | string[]>> }) {
   const h = await headers();
-  const { platform, inApp, lang } = detect(h.get("user-agent") ?? "", h.get("accept-language"));
+  const { platform, inApp } = detect(h.get("user-agent") ?? "");
+  const lang = goLang(h);
   const source = cleanSource((await searchParams).s);
   const c = COPY[lang];
   const w = WORDS[lang];
   const href = appStoreLink(source);
 
   return (
-    <main className="flex min-h-[100svh] flex-col items-center bg-bg px-5 pb-10 pt-[max(28px,env(safe-area-inset-top))] text-center">
+    <main className="flex min-h-[100svh] flex-col items-center bg-sand px-5 pb-10 pt-[max(28px,env(safe-area-inset-top))] text-center">
       <Track platform={platform} inApp={inApp} source={source} lang={lang} />
 
       <div className="flex items-center gap-2.5">
@@ -62,7 +64,7 @@ export default async function BioLinkPage({ searchParams }: { searchParams: Prom
                 <span className="mt-1 text-[20px] font-bold tracking-tight">{c.badge[1]}</span>
               </span>
             </a>
-            <p className="mt-2.5 text-[13px] font-semibold text-muted">{c.hero.note}</p>
+            <p className="mt-2.5 text-[13px] font-semibold text-muted">{c.hero.note.split(/\s*[·・]\s*/)[0]}</p>
             {platform === "android" && (
               <p className="mt-4 rounded-xl border border-accent-border bg-accent-soft px-4 py-3 text-[14px] font-semibold text-accent-deep">
                 {w.android}
@@ -75,7 +77,10 @@ export default async function BioLinkPage({ searchParams }: { searchParams: Prom
         )}
       </div>
 
-      <a href={href} data-download className="phone-shadow mt-9 block w-[230px]" tabIndex={-1} aria-hidden>
+      {/* Box shadow on a rounded layer behind the screenshot, as on the home page:
+          a drop-shadow filter on the image renders as a muddy box in iOS webviews. */}
+      <a href={href} data-download className="relative mt-9 block w-[230px]" tabIndex={-1} aria-hidden>
+        <span className="absolute inset-x-[0.8%] inset-y-[0.4%] rounded-[16.6%/7.7%] shadow-[0_40px_50px_-10px_rgba(74,24,38,0.22),0_14px_22px_-4px_rgba(74,24,38,0.12)]" />
         <Image
           src={`/screens/${screenLang(lang)}/game.webp`}
           alt={c.alt.vibe}
@@ -83,7 +88,8 @@ export default async function BioLinkPage({ searchParams }: { searchParams: Prom
           height={1548}
           sizes="230px"
           priority
-          className="h-auto w-full"
+          className="relative h-auto w-full select-none"
+          draggable={false}
         />
       </a>
     </main>
