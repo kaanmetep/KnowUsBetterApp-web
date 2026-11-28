@@ -21,14 +21,15 @@ export default async function BioLinkPage({ searchParams }: { searchParams: Prom
   const h = await headers();
   const { platform, inApp } = detect(h.get("user-agent") ?? "");
   const lang = goLang(h);
-  const source = cleanSource((await searchParams).s);
+  const query = await searchParams;
+  const source = cleanSource(query.s);
   const c = COPY[lang];
   const w = WORDS[lang];
   const href = appStoreLink(source);
 
   return (
     <main className="flex min-h-[100svh] flex-col items-center bg-sand px-5 pb-10 pt-[max(28px,env(safe-area-inset-top))] text-center">
-      <Track platform={platform} inApp={inApp} source={source} lang={lang} />
+      <Track platform={platform} inApp={inApp} source={source} lang={lang} guide={w.guide} previewGuide={query.guide === "1"} />
 
       <div className="flex items-center gap-2.5">
         <Image src="/images/app-icon.png" alt="" width={36} height={36} priority className="rounded-[9px] border border-hairline" />
@@ -54,15 +55,12 @@ export default async function BioLinkPage({ searchParams }: { searchParams: Prom
             <a
               href={href}
               data-download
-              className="flex h-[62px] w-full items-center justify-center gap-3 rounded-2xl bg-ink text-white shadow-[0_18px_36px_-14px_rgba(30,41,59,0.55)] transition-transform active:scale-[0.98]"
+              className="flex h-[60px] w-full items-center justify-center gap-2.5 rounded-2xl bg-ink text-white shadow-[0_18px_36px_-14px_rgba(30,41,59,0.55)] transition-transform active:scale-[0.98]"
             >
-              <svg viewBox="0 0 24 24" fill="currentColor" className="h-7 w-7 -translate-y-px" aria-hidden>
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6 shrink-0 -translate-y-px" aria-hidden>
                 <path d={APPLE_LOGO} />
               </svg>
-              <span className="flex flex-col items-start leading-none">
-                <span className="text-[11px] font-semibold tracking-wide text-white/75">{c.badge[0]}</span>
-                <span className="mt-1 text-[20px] font-bold tracking-tight">{c.badge[1]}</span>
-              </span>
+              <span className="text-[18px] font-bold tracking-[-0.01em]">{w.button}</span>
             </a>
             <p className="mt-2.5 text-[13px] font-semibold text-muted">{c.hero.note.split(/\s*[·・]\s*/)[0]}</p>
             {platform === "android" && (
