@@ -28,7 +28,15 @@ const notoSansJp = Noto_Sans_JP({
   preload: false,
 });
 
-export default function RootShell({ lang, children }: { lang: Lang; children: React.ReactNode }) {
+export default function RootShell({
+  lang,
+  footer = true,
+  children,
+}: {
+  lang: Lang;
+  footer?: boolean;
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang={lang}
@@ -39,7 +47,7 @@ export default function RootShell({ lang, children }: { lang: Lang; children: Re
       <body className="antialiased">
         <div className="flex flex-col lg:min-h-screen">
           {children}
-          <Footer />
+          {footer && <Footer />}
         </div>
       </body>
     </html>
